@@ -1,0 +1,3828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dotfuscatorMap SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscatorMap_v1.2.dtd">
+<dotfuscatorMap version="1.1">
+    <header>
+        <timestamp>2016-06-22T21:51:10</timestamp>
+        <product version="5.5.4954.46574" user="Unregistered " serial="000-00-000-391">Dotfuscator and Analytics Community Edition</product>
+    </header>
+    <mapping>
+        <module>
+            <name>CustomControl.dll</name>
+            <type>
+                <name>CustomControl.ConfigInteractor</name>
+                <methodlist>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>LoadFromConfig</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>OpenConfig</name>
+                    </method>
+                    <method>
+                        <signature>void(string, string)</signature>
+                        <name>SaveToConfig</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Configuration.Configuration</signature>
+                        <name>config</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>CustomControl.ConfigTextBox</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitTimer</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>LoadValues</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>RegTextBox_TextChanged</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(string, string)</signature>
+                        <name>SaveToConfig</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>Timer_Tick</name>
+                        <newname>b</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Drawing.Color</signature>
+                        <name>backColor</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bFirstRun</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bIsDirty</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strKeyName</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Timer</signature>
+                        <name>timer</name>
+                        <newname>e</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+        </module>
+        <module>
+            <name>EvidenceCollector.exe</name>
+            <type>
+                <name>EvidenceCollector.EntryPoint</name>
+                <newname>b</newname>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Main</name>
+                        <newname>a</newname>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.Evidence</name>
+                <newname>f</newname>
+                <methodlist>
+                    <method>
+                        <signature>void(string, int32)</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(string, int32, string, string, string)</signature>
+                        <name>AddActualEvidence</name>
+                        <newname>m</newname>
+                    </method>
+                    <method>
+                        <signature>void(string, string, string, string, string, string)</signature>
+                        <name>AddDetails</name>
+                        <newname>m</newname>
+                    </method>
+                    <method>
+                        <signature>void(Microsoft.Office.Interop.Word.Table, string)</signature>
+                        <name>AddTemplateDetails</name>
+                        <newname>m</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>FetchDetails</name>
+                        <newname>o</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.Dictionary`2&lt;string,EvidenceCollector.Evidence/ActualEvidence&gt;()</signature>
+                        <name>get_dictPropActualEvidences</name>
+                        <newname>s</newname>
+                    </method>
+                    <method>
+                        <signature>System.DateTime()</signature>
+                        <name>get_dtPropCreatedDate</name>
+                        <newname>w</newname>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_iPropNumberOfEvidences</name>
+                        <newname>x</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropAssociateID</name>
+                        <newname>p</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropDomain</name>
+                        <newname>m</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropEnvironment</name>
+                        <newname>u</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropEvidenceString</name>
+                        <newname>q</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropOperatingSystem</name>
+                        <newname>t</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropSolutions</name>
+                        <newname>r</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropTestData</name>
+                        <newname>v</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropTestPlanName</name>
+                        <newname>y</newname>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Table()</signature>
+                        <name>get_tbPropEvidenceTableFormat</name>
+                        <newname>n</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Collections.Generic.Dictionary`2&lt;string,EvidenceCollector.Evidence/ActualEvidence&gt;</signature>
+                        <name>dictActualEvidence</name>
+                        <newname>l</newname>
+                    </field>
+                    <field>
+                        <signature>System.DateTime</signature>
+                        <name>dtCreatedDate</name>
+                        <newname>h</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>iNumberOfEvidences</name>
+                        <newname>i</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strAssociateID</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strDomain</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strEnvironment</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strEvidenceString</name>
+                        <newname>j</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strOperatingSystem</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strSolutions</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTestData</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTestPlanName</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Table</signature>
+                        <name>tbEvidenceTableFormat</name>
+                        <newname>k</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.Evidence/ActualEvidence</name>
+                <newname>f/a</newname>
+                <methodlist>
+                    <method>
+                        <signature>void(string, int32, string, string, string)</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropEvidenceID</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropEvidenceImageURI</name>
+                        <newname>e</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>iEvidenceOrdinal</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strComments</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strEvidenceID</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strEvidenceImageURI</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strStatus</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.EvidenceCollector</name>
+                <newname>a</newname>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(string, int32, string, string, string)</signature>
+                        <name>AddActualEvidence</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.DoWorkEventArgs)</signature>
+                        <name>CaptureEvidenceBackgroundWork</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>cloneDocument</name>
+                        <newname>g</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>closeTargetDocument</name>
+                        <newname>d</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>closeTemplateDocument</name>
+                        <newname>c</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>closeWordApp</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>deleteEvidenceImage</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_DUMMY_PREREQUISITE_ALT_TEXT</name>
+                        <newname>i</newname>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_iPropNumberOfEvidences</name>
+                        <newname>l</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;()</signature>
+                        <name>get_lstPropEvidenceID</name>
+                        <newname>o</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;string[]&gt;()</signature>
+                        <name>get_lstPropTestPlanSteps</name>
+                        <newname>p</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;()</signature>
+                        <name>get_lstStrPropEvidencesWritten</name>
+                        <newname>m</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;()</signature>
+                        <name>get_lstStrPropTablesWritten</name>
+                        <newname>s</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_PREREQUISITE_ALT_TEXT</name>
+                        <newname>j</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.Queue`1&lt;string&gt;()</signature>
+                        <name>get_quePropStrCapturedEvidences</name>
+                        <newname>r</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropPrerequisites</name>
+                        <newname>n</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropTargetFileURI</name>
+                        <newname>q</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropTestPlanName</name>
+                        <newname>k</newname>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>GetEvidenceComments</name>
+                        <newname>g</newname>
+                    </method>
+                    <method>
+                        <signature>int32(string)</signature>
+                        <name>GetEvidenceOrdinalOf</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>GetEvidenceStatus</name>
+                        <newname>h</newname>
+                    </method>
+                    <method>
+                        <signature>int32(string)</signature>
+                        <name>GetTestPlanStepOrdinalOf</name>
+                        <newname>e</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Initialize</name>
+                        <newname>h</newname>
+                    </method>
+                    <method>
+                        <signature>void(System.Collections.Generic.Dictionary`2&lt;string,int32[]&gt;, System.Collections.Generic.Queue`1&lt;string&gt;, System.Collections.Generic.List`1&lt;string&gt;, System.Collections.Generic.List`1&lt;string&gt;)</signature>
+                        <name>LoadSession</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>Log</name>
+                        <newname>d</newname>
+                    </method>
+                    <method>
+                        <signature>void(string, string)</signature>
+                        <name>Log</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>openTargetDocument</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>openTemplateDocument</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>openWordApp</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.DoWorkEventArgs)</signature>
+                        <name>PrepareTargetDocumentBackgroundWork</name>
+                        <newname>d</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>PreviewTargetDocument</name>
+                        <newname>e</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.DoWorkEventArgs)</signature>
+                        <name>readEvidenceMetadataWork</name>
+                        <newname>c</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>saveTargetDocument</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>void(string, string)</signature>
+                        <name>SetEvidenceComments</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(string, bool)</signature>
+                        <name>SetEvidenceStatus</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>writeEvidence</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.DoWorkEventArgs)</signature>
+                        <name>WriteEvidencesBackgroundWork</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>writePrerequisiteEvidence</name>
+                        <newname>c</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Application</signature>
+                        <name>appPreviewWordApp</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bEvidenceCapturingCompleted</name>
+                        <newname>af</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bMetadataExtractionReturned</name>
+                        <newname>ao</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bMetadataExtractionStarted</name>
+                        <newname>ap</newname>
+                    </field>
+                    <field>
+                        <signature>System.Drawing.Bitmap</signature>
+                        <name>bmpCurrentImageBitmap</name>
+                        <newname>aq</newname>
+                    </field>
+                    <field>
+                        <signature>System.Drawing.Bitmap</signature>
+                        <name>bmpEvidenceImageBitmap</name>
+                        <newname>ar</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bPrepareTargetDocumentCompleted</name>
+                        <newname>ai</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bPreProcessingComplete</name>
+                        <newname>ae</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bPrerequisiteEvidence</name>
+                        <newname>at</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bReadyToInsertPrerequisiteEvidences</name>
+                        <newname>au</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bReadyToStartCaptureProcess</name>
+                        <newname>ag</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bResumedSession</name>
+                        <newname>ak</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bScreenshotDictionaryReady</name>
+                        <newname>aj</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bShowPrerequisiteEvidenceInPreview</name>
+                        <newname>av</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bTargetDocumentOpen</name>
+                        <newname>al</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bTemplateDocumentOpen</name>
+                        <newname>am</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bUseSecondaryScreen</name>
+                        <newname>as</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bWaitingForEvidence</name>
+                        <newname>aa</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bWaitingForMetadata</name>
+                        <newname>ac</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bWaitingForTable</name>
+                        <newname>ab</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bWordAppOpen</name>
+                        <newname>an</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bWriteEvidencesCompleted</name>
+                        <newname>ah</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.Dictionary`2&lt;string,int32[]&gt;</signature>
+                        <name>dictShpDummyScreenshots</name>
+                        <newname>j</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.Dictionary`2&lt;string,Microsoft.Office.Interop.Word.InlineShape&gt;</signature>
+                        <name>dictShpScreenshots</name>
+                        <newname>i</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Document</signature>
+                        <name>docPreviewDocument</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Document</signature>
+                        <name>docTargetDocument</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Document</signature>
+                        <name>docTemplateDocument</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>EvidenceCollector.Evidence</signature>
+                        <name>evEvidence</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;</signature>
+                        <name>lstStrEvidencesWritten</name>
+                        <newname>p</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;</signature>
+                        <name>lstStrTablesWritten</name>
+                        <newname>o</newname>
+                    </field>
+                    <field>
+                        <signature>System.Threading.ManualResetEvent</signature>
+                        <name>mreEvidenceSemaphore</name>
+                        <newname>q</newname>
+                    </field>
+                    <field>
+                        <signature>System.Threading.ManualResetEvent</signature>
+                        <name>mreMetadataExtractionSemaphore</name>
+                        <newname>s</newname>
+                    </field>
+                    <field>
+                        <signature>System.Threading.ManualResetEvent</signature>
+                        <name>mreTableSemaphore</name>
+                        <newname>r</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.Queue`1&lt;string&gt;</signature>
+                        <name>queStrCapturedEvidences</name>
+                        <newname>n</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strAssociateID</name>
+                        <newname>z</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strDomain</name>
+                        <newname>u</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strEnvironment</name>
+                        <newname>x</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strLogFile</name>
+                        <newname>ad</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strOperatingSystem</name>
+                        <newname>y</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strScreenshotSavePath</name>
+                        <newname>t</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strSolutions</name>
+                        <newname>v</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTargetFileURI</name>
+                        <newname>k</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTargetFolderPath</name>
+                        <newname>m</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTemplateFileName</name>
+                        <newname>l</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTempPath</name>
+                        <newname>h</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTestData</name>
+                        <newname>w</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Application</signature>
+                        <name>targetWriterWordApp</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>EvidenceCollector.TestPlan</signature>
+                        <name>tpPlan</name>
+                        <newname>b</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.MainForm</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.DoWorkEventArgs)</signature>
+                        <name>BgwDoneCaptureBackgroundWorker_DoWork</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.RunWorkerCompletedEventArgs)</signature>
+                        <name>BgwDoneCaptureBackgroundWorker_RunWorkerCompleted</name>
+                        <newname>e</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.ProgressChangedEventArgs)</signature>
+                        <name>BgwPrepareTargetDocumentBackgroundWorker_ProgressChanged</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.ProgressChangedEventArgs)</signature>
+                        <name>BgwWriteEvidencesBackgroundWorker_ProgressChanged</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>bringFormToFront</name>
+                        <newname>e</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>browseTargetFolder</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>browseTemplateFile</name>
+                        <newname>e</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>browseTestPlan</name>
+                        <newname>h</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>btPreviewDocumentButton_Click</name>
+                        <newname>d</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.RunWorkerCompletedEventArgs)</signature>
+                        <name>captureReturnedEvent</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>captureScreenshotButton_Click</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>captureScreenshotEvent</name>
+                        <newname>i</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>captureScreenshotHelper</name>
+                        <newname>d</newname>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>Dispose</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>doneCapturing_Click</name>
+                        <newname>g</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_StrDomain</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_StrQCProject</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_StrQCURL</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitializeComponent</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitializeFormData</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>initializePreviewDataGrid</name>
+                        <newname>i</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.FormClosingEventArgs)</signature>
+                        <name>MainForm_FormClosing</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>MainForm_Load</name>
+                        <newname>j</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.RunWorkerCompletedEventArgs)</signature>
+                        <name>metadataExtractionCompleteEvent</name>
+                        <newname>c</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>NotifyLastEvidenceCapture</name>
+                        <newname>h</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.RunWorkerCompletedEventArgs)</signature>
+                        <name>prepareTargetDocumentReturnedEvent</name>
+                        <newname>d</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>preprocess</name>
+                        <newname>c</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.DataGridViewCellEventArgs)</signature>
+                        <name>previewDataGrid_CellContentClick</name>
+                        <newname>c</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.DataGridViewCellMouseEventArgs)</signature>
+                        <name>previewDataGrid_CellDoubleClick</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.DataGridViewCellEventArgs)</signature>
+                        <name>previewDataGrid_CellEndEdit</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.DataGridViewCellMouseEventArgs)</signature>
+                        <name>previewDataGrid_CellMouseClick</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.DataGridViewCellEventArgs)</signature>
+                        <name>previewDataGrid_RowEnter</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>process</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>processButtonEvent</name>
+                        <newname>c</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>QCCheck_CheckedChanged</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>refactorForm</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>bool(native int, int32, int32, int32)</signature>
+                        <name>RegisterHotKey</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_StrDomain</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_StrQCProject</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_StrQCURL</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>setLastSelectedPath</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>setTooltips</name>
+                        <newname>g</newname>
+                    </method>
+                    <method>
+                        <signature>void(int32, int32)</signature>
+                        <name>shiftCurrentStepIndicator</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(System.Windows.Forms.Message&amp;)</signature>
+                        <name>WndProc</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.ComponentModel.RunWorkerCompletedEventArgs)</signature>
+                        <name>writeEvidenceCompletedEvent</name>
+                        <newname>b</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>associateIDLabel</name>
+                        <newname>az</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>associateIDTextBox</name>
+                        <newname>ae</newname>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bExitWhenDone</name>
+                        <newname>q</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.BackgroundWorker</signature>
+                        <name>bgwCaptureEvidenceBackgroundWorker</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.BackgroundWorker</signature>
+                        <name>bgwDoneCaptureBackgroundWorker</name>
+                        <newname>h</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.BackgroundWorker</signature>
+                        <name>bgwMetadataExtractionWorker</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.BackgroundWorker</signature>
+                        <name>bgwPrepareTargetDocumentBackgroundWorker</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.BackgroundWorker</signature>
+                        <name>bgwWriteEvidencesBackgroundWorker</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>browseTargetFolderButton</name>
+                        <newname>ao</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.FolderBrowserDialog</signature>
+                        <name>browseTargetFolderDialog</name>
+                        <newname>x</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>browseTemplateFileButton</name>
+                        <newname>al</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.OpenFileDialog</signature>
+                        <name>browseTemplateFileDialog</name>
+                        <newname>w</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>browseTestPlanButton</name>
+                        <newname>ai</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.OpenFileDialog</signature>
+                        <name>browseTestPlanDialog</name>
+                        <newname>y</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>btPreviewDocumentButton</name>
+                        <newname>aa</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.CheckBox</signature>
+                        <name>cbPrerequisiteEvidencesCheckbox</name>
+                        <newname>a7</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.CheckBox</signature>
+                        <name>cbSecondaryScreenCheckbox</name>
+                        <newname>a8</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.IContainer</signature>
+                        <name>components</name>
+                        <newname>v</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewCheckBoxCell</signature>
+                        <name>dgvCbCell</name>
+                        <newname>n</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewCheckBoxColumn</signature>
+                        <name>dgvCbColStatusColumn</name>
+                        <newname>m</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewImageColumn</signature>
+                        <name>dgvImgColPreviewColumn</name>
+                        <newname>l</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewTextBoxCell</signature>
+                        <name>dgvTbCell</name>
+                        <newname>p</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewTextBoxColumn</signature>
+                        <name>dgvTbCommentsColumn</name>
+                        <newname>o</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>domainLabel</name>
+                        <newname>ap</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>domainTextBox</name>
+                        <newname>av</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>doneCapturingButton</name>
+                        <newname>ad</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>environmentLabel</name>
+                        <newname>as</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>environmentTextBox</name>
+                        <newname>aw</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>evidenceCaptureStatusLabel</name>
+                        <newname>aq</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.FormWindowState</signature>
+                        <name>fwsSavedState</name>
+                        <newname>r</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>iCurrentEvidenceOrdinal</name>
+                        <newname>k</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.PictureBox</signature>
+                        <name>imgPreviewBox</name>
+                        <newname>a1</newname>
+                    </field>
+                    <field>
+                        <signature>KeyLibrary.KeyUtility</signature>
+                        <name>kuKeyUtility</name>
+                        <newname>i</newname>
+                    </field>
+                    <field>
+                        <signature>KeyLibrary.KeyUtility</signature>
+                        <name>kuminimize</name>
+                        <newname>j</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>label1</name>
+                        <newname>ag</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>label2</name>
+                        <newname>am</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>label3</name>
+                        <newname>aj</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>m_strdomain</name>
+                        <newname>t</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>m_strproject</name>
+                        <newname>u</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>m_strQCURL</name>
+                        <newname>s</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>operatingSystemLabel</name>
+                        <newname>at</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>operatingSystemTextBox</name>
+                        <newname>ax</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Panel</signature>
+                        <name>panel1</name>
+                        <newname>a5</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Panel</signature>
+                        <name>panel2</name>
+                        <newname>ab</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.RichTextBox</signature>
+                        <name>preRequisiteBox</name>
+                        <newname>a3</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridView</signature>
+                        <name>previewDataGrid</name>
+                        <newname>a2</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>processButton</name>
+                        <newname>ac</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.CheckBox</signature>
+                        <name>QCCheck</name>
+                        <newname>a6</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>solutionsLabel</name>
+                        <newname>au</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>solutionTextBox</name>
+                        <newname>ay</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.SplitContainer</signature>
+                        <name>splitContainer1</name>
+                        <newname>a0</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.SplitContainer</signature>
+                        <name>splitContainer2</name>
+                        <newname>a4</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>statusHintLabel</name>
+                        <newname>ar</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strpass</name>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTargetFolderPath</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTemplateFileName</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTestPlanFileName</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.TableLayoutPanel</signature>
+                        <name>tableLayoutPanel1</name>
+                        <newname>af</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>targetFolderPathBox</name>
+                        <newname>ah</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>templateFilePathBox</name>
+                        <newname>ak</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>testPlanFilePathBox</name>
+                        <newname>an</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.ToolTip</signature>
+                        <name>toolTip1</name>
+                        <newname>z</newname>
+                    </field>
+                </fieldlist>
+                <propertylist>
+                    <property>
+                        <signature>string()</signature>
+                        <name>StrDomain</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>StrQCProject</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>StrQCURL</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.MultipleTestSelection</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>Dispose</name>
+                    </method>
+                    <method>
+                        <signature>TDAPIOLELib.List()</signature>
+                        <name>get_TestList</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitializeComponent</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(TDAPIOLELib.TestFactory)</signature>
+                        <name>LoadTestPLans</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.DataGridViewCellEventArgs)</signature>
+                        <name>MTSGrid_CellDoubleClick</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(TDAPIOLELib.List)</signature>
+                        <name>set_TestList</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>TDAPIOLELib.List</signature>
+                        <name>&lt;TestList&gt;k__BackingField</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.IContainer</signature>
+                        <name>components</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridView</signature>
+                        <name>MTSGrid</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewTextBoxColumn</signature>
+                        <name>TestPlanName</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.DataGridViewTextBoxColumn</signature>
+                        <name>TestPlanPath</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>TDAPIOLELib.List</signature>
+                        <name>tstlist</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist>
+                    <property>
+                        <signature>TDAPIOLELib.List()</signature>
+                        <name>TestList</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.MultipleTestSelection/&lt;LoadTestPLans&gt;o__SiteContainer0</name>
+                <newname>EvidenceCollector.MultipleTestSelection/b</newname>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Action`4&lt;System.Runtime.CompilerServices.CallSite,System.Windows.Forms.DataGridViewRowCollection,string,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site1</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site2</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,object,string,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site3</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,TDAPIOLELib.TestFactory,object,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site4</name>
+                        <newname>d</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.MultipleTestSelection/&lt;MTSGrid_CellDoubleClick&gt;o__SiteContainer5</name>
+                <newname>EvidenceCollector.MultipleTestSelection/a</newname>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.Test&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site6</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.Password</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>button1_Click</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>Dispose</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitializeComponent</name>
+                        <newname>a</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>button1</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.IContainer</signature>
+                        <name>components</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>CustomControl.ConfigTextBox</signature>
+                        <name>configTextBox1</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>label1</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>lblQCDomain</name>
+                        <newname>h</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>LblQcPath</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Label</signature>
+                        <name>Project</name>
+                        <newname>i</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.ComboBox</signature>
+                        <name>QCDomain</name>
+                        <newname>k</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.ComboBox</signature>
+                        <name>QCProject</name>
+                        <newname>j</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.TableLayoutPanel</signature>
+                        <name>tableLayoutPanel1</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.TextBox</signature>
+                        <name>textBox1</name>
+                        <newname>c</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.PreviewForm</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>Dispose</name>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>dockButton_Click</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>System.Windows.Forms.CreateParams()</signature>
+                        <name>get_CreateParams</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitializeComponent</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.MouseEventArgs)</signature>
+                        <name>previewFormNotifyIcon_MouseClick</name>
+                        <newname>a</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.ComponentModel.IContainer</signature>
+                        <name>components</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>CP_NOCLOSE_BUTTON</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>dockButton</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>nextButton</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.NotifyIcon</signature>
+                        <name>previewFormNotifyIcon</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.Button</signature>
+                        <name>previousButton</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.Windows.Forms.TableLayoutPanel</signature>
+                        <name>tableLayoutPanel1</name>
+                        <newname>c</newname>
+                    </field>
+                </fieldlist>
+                <propertylist>
+                    <property>
+                        <signature>System.Windows.Forms.CreateParams()</signature>
+                        <name>CreateParams</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.Properties.Resources</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>System.Drawing.Icon()</signature>
+                        <name>get_Cancelled</name>
+                    </method>
+                    <method>
+                        <signature>System.Globalization.CultureInfo()</signature>
+                        <name>get_Culture</name>
+                    </method>
+                    <method>
+                        <signature>System.Drawing.Icon()</signature>
+                        <name>get_Done</name>
+                    </method>
+                    <method>
+                        <signature>System.Drawing.Bitmap()</signature>
+                        <name>get_grey</name>
+                    </method>
+                    <method>
+                        <signature>System.Drawing.Bitmap()</signature>
+                        <name>get_pending</name>
+                    </method>
+                    <method>
+                        <signature>System.Resources.ResourceManager()</signature>
+                        <name>get_ResourceManager</name>
+                    </method>
+                    <method>
+                        <signature>void(System.Globalization.CultureInfo)</signature>
+                        <name>set_Culture</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>System.Globalization.CultureInfo</signature>
+                        <name>resourceCulture</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.Resources.ResourceManager</signature>
+                        <name>resourceMan</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist>
+                    <property>
+                        <signature>System.Drawing.Icon()</signature>
+                        <name>Cancelled</name>
+                    </property>
+                    <property>
+                        <signature>System.Globalization.CultureInfo()</signature>
+                        <name>Culture</name>
+                    </property>
+                    <property>
+                        <signature>System.Drawing.Icon()</signature>
+                        <name>Done</name>
+                    </property>
+                    <property>
+                        <signature>System.Drawing.Bitmap()</signature>
+                        <name>grey</name>
+                    </property>
+                    <property>
+                        <signature>System.Drawing.Bitmap()</signature>
+                        <name>pending</name>
+                    </property>
+                    <property>
+                        <signature>System.Resources.ResourceManager()</signature>
+                        <name>ResourceManager</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.Properties.Settings</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>EvidenceCollector.Properties.Settings()</signature>
+                        <name>get_Default</name>
+                        <newname>a</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>EvidenceCollector.Properties.Settings</signature>
+                        <name>defaultInstance</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist>
+                    <property>
+                        <signature>EvidenceCollector.Properties.Settings()</signature>
+                        <name>Default</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.SessionRestore</name>
+                <newname>g</newname>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>openTargetDocument</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>ResumeState</name>
+                        <newname>a</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Document</signature>
+                        <name>docTargetFile</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTargetDocumentName</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Application</signature>
+                        <name>wordApp</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.TestPlan</name>
+                <newname>d</newname>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>closeTestPlanDocument</name>
+                        <newname>g</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>closeTestPlanReaderWordApp</name>
+                        <newname>h</newname>
+                    </method>
+                    <method>
+                        <signature>void(TDAPIOLELib.List, TDAPIOLELib.TestFactory)</signature>
+                        <name>DisplayListOFTestPlan</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_iPropNumberOfSteps</name>
+                        <newname>j</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;string[]&gt;()</signature>
+                        <name>get_lstPropTestPlanSteps</name>
+                        <newname>l</newname>
+                    </method>
+                    <method>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;()</signature>
+                        <name>get_lstStrPropEvidenceID</name>
+                        <newname>k</newname>
+                    </method>
+                    <method>
+                        <signature>TDAPIOLELib.Test()</signature>
+                        <name>get_SelectedTest</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropPrerequisites</name>
+                        <newname>i</newname>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_strPropTestPlanName</name>
+                        <newname>m</newname>
+                    </method>
+                    <method>
+                        <signature>void(object[])</signature>
+                        <name>ParseDataSet</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>void(string, System.ComponentModel.BackgroundWorker)</signature>
+                        <name>ParseFile</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>void(TDAPIOLELib.Test)</signature>
+                        <name>set_SelectedTest</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>StripTagsCharArray</name>
+                        <newname>f</newname>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>TDAPIOLELib.Test</signature>
+                        <name>&lt;SelectedTest&gt;k__BackingField</name>
+                        <newname>h</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Application</signature>
+                        <name>appTestPlanReaderWordApp</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>string[]</signature>
+                        <name>arrStepData</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.Document</signature>
+                        <name>docTestPlanDocument</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.List`1&lt;string&gt;</signature>
+                        <name>lstStrEvidenceID</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>System.Collections.Generic.List`1&lt;string[]&gt;</signature>
+                        <name>lstTestPlanSteps</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strPrerequisites</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strTestPlanName</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>EvidenceCollector.TestPlan/&lt;ParseDataSet&gt;o__SiteContainer0</name>
+                <newname>d/a</newname>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.TestFactory&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site1</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.TDFilter&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site2</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.Test&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site3</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,string&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site4</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site5</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`6&lt;System.Runtime.CompilerServices.CallSite,System.Type,object,string,string,object&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site6</name>
+                        <newname>f</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.DesignStepFactory&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site7</name>
+                        <newname>g</newname>
+                    </field>
+                    <field>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,string&gt;&gt;</signature>
+                        <name>&lt;&gt;p__Site8</name>
+                        <newname>h</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word._Application</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_4</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_21</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_85</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Documents()</signature>
+                        <name>get_Documents</name>
+                    </method>
+                    <method>
+                        <signature>bool()</signature>
+                        <name>get_Visible</name>
+                    </method>
+                    <method>
+                        <signature>void(object&amp;, object&amp;, object&amp;)</signature>
+                        <name>Quit</name>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>set_Visible</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Documents()</signature>
+                        <name>Documents</name>
+                    </property>
+                    <property>
+                        <signature>bool()</signature>
+                        <name>Visible</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word._Document</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_8</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_13</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_1</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap4_24</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap5_31</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap6_78</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap7_7</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap8_2</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap9_255</name>
+                    </method>
+                    <method>
+                        <signature>void(object&amp;, object&amp;, object&amp;)</signature>
+                        <name>Close</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>get_Content</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.InlineShapes()</signature>
+                        <name>get_InlineShapes</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Paragraphs()</signature>
+                        <name>get_Paragraphs</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Sentences()</signature>
+                        <name>get_Sentences</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Tables()</signature>
+                        <name>get_Tables</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range(object&amp;, object&amp;)</signature>
+                        <name>Range</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Save</name>
+                    </method>
+                    <method>
+                        <signature>void(object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;)</signature>
+                        <name>SaveAs2</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>Content</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.InlineShapes()</signature>
+                        <name>InlineShapes</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Paragraphs()</signature>
+                        <name>Paragraphs</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Sentences()</signature>
+                        <name>Sentences</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Tables()</signature>
+                        <name>Tables</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Application</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents2</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents2_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents3</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents3_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents4</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ApplicationEvents4_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Cell</name>
+                <methodlist>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>get_Range</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>Range</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Cells</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_1</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_14</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_Count</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Cell(int32)</signature>
+                        <name>get_Item</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>Count</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Cell(int32)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Document</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.DocumentEvents2</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.DocumentEvents2_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Documents</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_15</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Document(object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;, object&amp;)</signature>
+                        <name>Open</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.InlineShape</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_5</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_21</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_7</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap4_10</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Delete</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_AlternativeText</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>get_Range</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_Title</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_AlternativeText</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_Title</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>string()</signature>
+                        <name>AlternativeText</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>Range</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>Title</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.InlineShapes</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_3</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.InlineShape(string, object&amp;, object&amp;, object&amp;)</signature>
+                        <name>AddPicture</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_Count</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.InlineShape(int32)</signature>
+                        <name>get_Item</name>
+                    </method>
+                    <method>
+                        <signature>System.Collections.IEnumerator()</signature>
+                        <name>GetEnumerator</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>Count</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.InlineShape(int32)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ListFormat</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_8</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_ListString</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>string()</signature>
+                        <name>ListString</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.ListParagraphs</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_1</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_Count</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>Count</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Paragraph</name>
+                <methodlist>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>get_Range</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>Range</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Paragraphs</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_65</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Paragraph(object&amp;)</signature>
+                        <name>Add</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Range</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_2</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_6</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_17</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap4_22</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap5_26</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap6_6</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap7_2</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap8_12</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap9_3</name>
+                    </method>
+                    <method>
+                        <signature>void(object&amp;)</signature>
+                        <name>Collapse</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Copy</name>
+                    </method>
+                    <method>
+                        <signature>int32(object&amp;, object&amp;)</signature>
+                        <name>Delete</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_End</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.InlineShapes()</signature>
+                        <name>get_InlineShapes</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.ListFormat()</signature>
+                        <name>get_ListFormat</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.ListParagraphs()</signature>
+                        <name>get_ListParagraphs</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Sentences()</signature>
+                        <name>get_Sentences</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_Start</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_Text</name>
+                    </method>
+                    <method>
+                        <signature>void(object&amp;)</signature>
+                        <name>InsertBreak</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range(object&amp;, object&amp;)</signature>
+                        <name>Next</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Paste</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range(object&amp;, object&amp;)</signature>
+                        <name>Previous</name>
+                    </method>
+                    <method>
+                        <signature>void(int32)</signature>
+                        <name>set_End</name>
+                    </method>
+                    <method>
+                        <signature>void(int32)</signature>
+                        <name>set_Start</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_Text</name>
+                    </method>
+                    <method>
+                        <signature>void(int32, int32)</signature>
+                        <name>SetRange</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>End</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.InlineShapes()</signature>
+                        <name>InlineShapes</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.ListFormat()</signature>
+                        <name>ListFormat</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.ListParagraphs()</signature>
+                        <name>ListParagraphs</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Sentences()</signature>
+                        <name>Sentences</name>
+                    </property>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>Start</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>Text</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Row</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_21</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Cells()</signature>
+                        <name>get_Cells</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Cells()</signature>
+                        <name>Cells</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Rows</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_23</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Row(int32)</signature>
+                        <name>get_Item</name>
+                    </method>
+                    <method>
+                        <signature>System.Collections.IEnumerator()</signature>
+                        <name>GetEnumerator</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Row(int32)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Sentences</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_7</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range(int32)</signature>
+                        <name>get_Item</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Range(int32)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Table</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_4</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_6</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_6</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Cell(int32, int32)</signature>
+                        <name>Cell</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>Delete</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>get_Range</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Rows()</signature>
+                        <name>get_Rows</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Range()</signature>
+                        <name>Range</name>
+                    </property>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Rows()</signature>
+                        <name>Rows</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.Tables</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_4</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_1</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Table(Microsoft.Office.Interop.Word.Range, int32, int32, object&amp;, object&amp;)</signature>
+                        <name>Add</name>
+                    </method>
+                    <method>
+                        <signature>Microsoft.Office.Interop.Word.Table(int32)</signature>
+                        <name>get_Item</name>
+                    </method>
+                    <method>
+                        <signature>System.Collections.IEnumerator()</signature>
+                        <name>GetEnumerator</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>Microsoft.Office.Interop.Word.Table(int32)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.WdBreakType</name>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>value__</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdColumnBreak</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdLineBreak</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdLineBreakClearLeft</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdLineBreakClearRight</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdPageBreak</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdSectionBreakContinuous</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdSectionBreakEvenPage</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdSectionBreakNextPage</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdSectionBreakOddPage</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdBreakType</signature>
+                        <name>wdTextWrappingBreak</name>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.WdCollapseDirection</name>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>value__</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdCollapseDirection</signature>
+                        <name>wdCollapseEnd</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdCollapseDirection</signature>
+                        <name>wdCollapseStart</name>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>Microsoft.Office.Interop.Word.WdUnits</name>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>value__</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdCell</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdCharacter</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdCharacterFormatting</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdColumn</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdItem</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdLine</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdParagraph</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdParagraphFormatting</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdRow</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdScreen</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdSection</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdSentence</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdStory</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdTable</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdWindow</name>
+                    </field>
+                    <field>
+                        <signature>Microsoft.Office.Interop.Word.WdUnits</signature>
+                        <name>wdWord</name>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._DIOtaEvents</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._DIOtaEvents_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._DIProgressEvents</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._DIProgressEvents_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._DIRequestReporterEvents</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._DIRequestReporterEvents_Event</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._IListEx</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._IPerformanceMonitorHelper</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib._ISupportClearDataCache</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.DesignStep</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.DesignStepFactory</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IBaseFactory</name>
+                <methodlist>
+                    <method>
+                        <signature>object(object)</signature>
+                        <name>get_Item</name>
+                    </method>
+                    <method>
+                        <signature>TDAPIOLELib.List(string)</signature>
+                        <name>NewList</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>object(object)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IBaseFactoryEx</name>
+                <methodlist>
+                    <method>
+                        <signature>object(object)</signature>
+                        <name>get_Item</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>object(object)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IBaseField</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IBaseFieldEx</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IBaseFieldExMail</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IDesignStep</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_3</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_11</name>
+                    </method>
+                    <method>
+                        <signature>object(string)</signature>
+                        <name>get_Field</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_StepDescription</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_StepExpectedResult</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_StepName</name>
+                    </method>
+                    <method>
+                        <signature>void(string, object)</signature>
+                        <name>set_Field</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_StepDescription</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_StepExpectedResult</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_StepName</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>object(string)</signature>
+                        <name>Field</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>StepDescription</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>StepExpectedResult</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>StepName</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IList</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_2</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>get_Count</name>
+                    </method>
+                    <method>
+                        <signature>object(int32)</signature>
+                        <name>get_Item</name>
+                    </method>
+                    <method>
+                        <signature>System.Collections.IEnumerator()</signature>
+                        <name>GetEnumerator</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>int32()</signature>
+                        <name>Count</name>
+                    </property>
+                    <property>
+                        <signature>object(int32)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IList2</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IObjectLockingSupport</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IRequestReporter</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ISelfServicePasswordReset</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ISupportTotalCount</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection_CreateMap</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection_TestFolders</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection2</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection3</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection4</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection5</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDConnection6</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_5</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_45</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_1</name>
+                    </method>
+                    <method>
+                        <signature>void(string, string, string, string)</signature>
+                        <name>ConnectProjectEx</name>
+                    </method>
+                    <method>
+                        <signature>bool()</signature>
+                        <name>get_Connected</name>
+                    </method>
+                    <method>
+                        <signature>object()</signature>
+                        <name>get_TestFactory</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>InitConnectionEx</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>bool()</signature>
+                        <name>Connected</name>
+                    </property>
+                    <property>
+                        <signature>object()</signature>
+                        <name>TestFactory</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDFilter</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDFilter2</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_2</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_5</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap3_4</name>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>get_Filter</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_Text</name>
+                    </method>
+                    <method>
+                        <signature>TDAPIOLELib.List()</signature>
+                        <name>NewList</name>
+                    </method>
+                    <method>
+                        <signature>void(string, string)</signature>
+                        <name>set_Filter</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_Text</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>string(string)</signature>
+                        <name>Filter</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>Text</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITDProgressNotify</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITest</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITest2</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_3</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap2_14</name>
+                    </method>
+                    <method>
+                        <signature>object()</signature>
+                        <name>get_DesignStepFactory</name>
+                    </method>
+                    <method>
+                        <signature>object(string)</signature>
+                        <name>get_Field</name>
+                    </method>
+                    <method>
+                        <signature>object()</signature>
+                        <name>get_ID</name>
+                    </method>
+                    <method>
+                        <signature>string()</signature>
+                        <name>get_Name</name>
+                    </method>
+                    <method>
+                        <signature>void(string, object)</signature>
+                        <name>set_Field</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>set_Name</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>object()</signature>
+                        <name>DesignStepFactory</name>
+                    </property>
+                    <property>
+                        <signature>object(string)</signature>
+                        <name>Field</name>
+                    </property>
+                    <property>
+                        <signature>object()</signature>
+                        <name>ID</name>
+                    </property>
+                    <property>
+                        <signature>string()</signature>
+                        <name>Name</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITestFactory</name>
+                <methodlist>
+                    <method>
+                        <signature>object(object)</signature>
+                        <name>get_Item</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>object(object)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.ITestFactory2</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>_VtblGap1_3</name>
+                    </method>
+                    <method>
+                        <signature>object()</signature>
+                        <name>get_Filter</name>
+                    </method>
+                    <method>
+                        <signature>object(object)</signature>
+                        <name>get_Item</name>
+                    </method>
+                    <method>
+                        <signature>TDAPIOLELib.List(string)</signature>
+                        <name>NewList</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist>
+                    <property>
+                        <signature>object()</signature>
+                        <name>Filter</name>
+                    </property>
+                    <property>
+                        <signature>object(object)</signature>
+                        <name>Item</name>
+                    </property>
+                </propertylist>
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.IUnitTestSupport</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.List</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.TDConnection</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.TDFilter</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.Test</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>TDAPIOLELib.TestFactory</name>
+                <methodlist />
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+        </module>
+        <module>
+            <name>KeyLibrary.dll</name>
+            <type>
+                <name>KeyLibrary.Constants</name>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>ALT</name>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>CTRL</name>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>NOMOD</name>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>SHIFT</name>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>WIN</name>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>WM_HOTKEY_MSG_ID</name>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>KeyLibrary.KeyUtility</name>
+                <methodlist>
+                    <method>
+                        <signature>void(int32, System.Windows.Forms.Keys, System.Windows.Forms.Form)</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>int32()</signature>
+                        <name>GetHashCode</name>
+                    </method>
+                    <method>
+                        <signature>bool()</signature>
+                        <name>Register</name>
+                    </method>
+                    <method>
+                        <signature>bool(native int, int32, int32, int32)</signature>
+                        <name>RegisterHotKey</name>
+                    </method>
+                    <method>
+                        <signature>bool()</signature>
+                        <name>Unregiser</name>
+                    </method>
+                    <method>
+                        <signature>bool(native int, int32)</signature>
+                        <name>UnregisterHotKey</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>native int</signature>
+                        <name>hWnd</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>id</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>key</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>modifier</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+        </module>
+        <module>
+            <name>ScreenCaptureLibrary.dll</name>
+            <type>
+                <name>ScreenCaptureLibrary.CaptureUtlity</name>
+                <methodlist>
+                    <method>
+                        <signature>System.Drawing.Image()</signature>
+                        <name>CaptureScreen</name>
+                    </method>
+                    <method>
+                        <signature>void(string, System.Drawing.Imaging.ImageFormat)</signature>
+                        <name>CaptureScreenToFile</name>
+                    </method>
+                    <method>
+                        <signature>void(int32[], string, System.Drawing.Imaging.ImageFormat)</signature>
+                        <name>CaptureSecScreen</name>
+                    </method>
+                    <method>
+                        <signature>System.Drawing.Image(native int)</signature>
+                        <name>CaptureWindow</name>
+                    </method>
+                    <method>
+                        <signature>void(native int, string, System.Drawing.Imaging.ImageFormat)</signature>
+                        <name>CaptureWindowToFile</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>ScreenCaptureLibrary.GDI32</name>
+                <newname>c</newname>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>bool(native int, int32, int32, int32, int32, native int, int32, int32, int32)</signature>
+                        <name>BitBlt</name>
+                    </method>
+                    <method>
+                        <signature>native int(native int, int32, int32)</signature>
+                        <name>CreateCompatibleBitmap</name>
+                    </method>
+                    <method>
+                        <signature>native int(native int)</signature>
+                        <name>CreateCompatibleDC</name>
+                    </method>
+                    <method>
+                        <signature>bool(native int)</signature>
+                        <name>DeleteDC</name>
+                    </method>
+                    <method>
+                        <signature>bool(native int)</signature>
+                        <name>DeleteObject</name>
+                    </method>
+                    <method>
+                        <signature>native int(native int, native int)</signature>
+                        <name>SelectObject</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>SRCCOPY</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>ScreenCaptureLibrary.LaunchUtility</name>
+                <methodlist>
+                    <method>
+                        <signature>void(string, bool)</signature>
+                        <name>LaunchScreenFilter</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>ScreenCaptureLibrary.ScreenFilter</name>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>void(string, bool)</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>bool(System.Windows.Forms.Screen)</signature>
+                        <name>&lt;initScreenDimensions&gt;b__0</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(bool)</signature>
+                        <name>Dispose</name>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>InitializeComponent</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void()</signature>
+                        <name>initScreenDimensions</name>
+                        <newname>b</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.FormClosingEventArgs)</signature>
+                        <name>ScreenFilter_FormClosing</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.KeyPressEventArgs)</signature>
+                        <name>ScreenFilter_KeyPress</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.EventArgs)</signature>
+                        <name>ScreenFilter_Load</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>void(object, System.Windows.Forms.MouseEventArgs)</signature>
+                        <name>ScreenFilter_MouseClick</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>native int(System.Drawing.Point)</signature>
+                        <name>WindowFromPoint</name>
+                    </method>
+                    <method>
+                        <signature>void(System.Windows.Forms.Message&amp;)</signature>
+                        <name>WndProc</name>
+                    </method>
+                </methodlist>
+                <fieldlist>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bEscPressed</name>
+                    </field>
+                    <field>
+                        <signature>bool</signature>
+                        <name>bUseSecondaryScreen</name>
+                        <newname>b</newname>
+                    </field>
+                    <field>
+                        <signature>System.ComponentModel.IContainer</signature>
+                        <name>components</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>System.Func`2&lt;System.Windows.Forms.Screen,bool&gt;</signature>
+                        <name>CS$&lt;&gt;9__CachedAnonymousMethodDelegate1</name>
+                        <newname>e</newname>
+                    </field>
+                    <field>
+                        <signature>KeyLibrary.KeyUtility</signature>
+                        <name>kuCaptureHotkey</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>string</signature>
+                        <name>strSavePath</name>
+                        <newname>a</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>ScreenCaptureLibrary.User32</name>
+                <newname>e</newname>
+                <methodlist>
+                    <method>
+                        <signature>void()</signature>
+                        <name>.ctor</name>
+                    </method>
+                    <method>
+                        <signature>bool(native int)</signature>
+                        <name>CloseDesktop</name>
+                    </method>
+                    <method>
+                        <signature>unsigned int32()</signature>
+                        <name>GetCurrentThreadId</name>
+                    </method>
+                    <method>
+                        <signature>native int()</signature>
+                        <name>GetDesktopWindow</name>
+                    </method>
+                    <method>
+                        <signature>native int(unsigned int32)</signature>
+                        <name>GetThreadDesktop</name>
+                    </method>
+                    <method>
+                        <signature>native int(native int)</signature>
+                        <name>GetWindowDC</name>
+                    </method>
+                    <method>
+                        <signature>native int(native int, ScreenCaptureLibrary.User32/RECT&amp;)</signature>
+                        <name>GetWindowRect</name>
+                    </method>
+                    <method>
+                        <signature>native int(unsigned int32, bool, unsigned int32)</signature>
+                        <name>OpenInputDesktop</name>
+                    </method>
+                    <method>
+                        <signature>native int(native int, native int)</signature>
+                        <name>ReleaseDC</name>
+                    </method>
+                </methodlist>
+                <fieldlist />
+                <propertylist />
+                <eventlist />
+            </type>
+            <type>
+                <name>ScreenCaptureLibrary.User32/RECT</name>
+                <newname>e/a</newname>
+                <methodlist />
+                <fieldlist>
+                    <field>
+                        <signature>int32</signature>
+                        <name>bottom</name>
+                        <newname>d</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>left</name>
+                        <newname>a</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>right</name>
+                        <newname>c</newname>
+                    </field>
+                    <field>
+                        <signature>int32</signature>
+                        <name>top</name>
+                        <newname>b</newname>
+                    </field>
+                </fieldlist>
+                <propertylist />
+                <eventlist />
+            </type>
+        </module>
+    </mapping>
+    <statistics>
+        <statisticline>
+            <description>Total Classes</description>
+            <statistic>101</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Methods</description>
+            <statistic>348</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Fields</description>
+            <statistic>236</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Properties</description>
+            <statistic>62</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Events</description>
+            <statistic>0</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Classes Renamed</description>
+            <statistic>12</statistic>
+            <statistic>11.88 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Methods Renamed</description>
+            <statistic>125</statistic>
+            <statistic>35.92 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Fields Renamed</description>
+            <statistic>197</statistic>
+            <statistic>83.47 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Properties Renamed</description>
+            <statistic>0</statistic>
+            <statistic>0.00 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Total Events Renamed</description>
+            <statistic>0</statistic>
+            <statistic>0.00 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'a'</description>
+            <statistic>37</statistic>
+            <statistic>10.63 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'b'</description>
+            <statistic>13</statistic>
+            <statistic>3.74 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'f'</description>
+            <statistic>11</statistic>
+            <statistic>3.16 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'c'</description>
+            <statistic>7</statistic>
+            <statistic>2.01 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'd'</description>
+            <statistic>6</statistic>
+            <statistic>1.72 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'e'</description>
+            <statistic>6</statistic>
+            <statistic>1.72 %</statistic>
+        </statisticline>
+        <statisticline>
+            <description>Methods Renamed to 'm'</description>
+            <statistic>6</statistic>
+            <statistic>1.72 %</statistic>
+        </statisticline>
+    </statistics>
+</dotfuscatorMap>
