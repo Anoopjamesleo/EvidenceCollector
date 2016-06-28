@@ -41,3 +41,20 @@ C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector
 C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.exe
 C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.pdb
 C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.csprojResolveAssemblyReference.cache
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\EvidenceCollector.exe.config
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\EvidenceCollector.exe
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\EvidenceCollector.pdb
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\CustomControl.dll
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\KeyLibrary.dll
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\ScreenCaptureLibrary.dll
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.csprojResolveAssemblyReference.cache
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\Interop.TDAPIOLELib.dll
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.csproj.ResolveComReference.cache
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.MainForm.resources
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.MultipleTestSelection.resources
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.Password.resources
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.PreviewForm.resources
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.Properties.Resources.resources
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.csproj.GenerateResource.Cache
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.exe
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.pdb

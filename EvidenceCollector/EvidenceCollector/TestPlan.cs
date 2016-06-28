@@ -219,9 +219,10 @@ namespace EvidenceCollector
                         throw new Exception("No Test plans selected ");
                     }
                     strTestPlanName = tst.Name;
-                    string noHTML = Regex.Replace(tst["TS_DESCRIPTION"], @"<[^>]+>|&nbsp;", "").Trim();
-                    noHTML = WebUtility.HtmlDecode(noHTML);
-                    Match m = Regex.Match(noHTML, "[Pp]rerequisites.*[Cc]hange [Cc]ontrol");
+                 //   string noHTML = Regex.Replace(tst["TS_DESCRIPTION"], @"<[^>]+>|&nbsp;", "").Trim();
+                  //  noHTML = WebUtility.HtmlDecode(noHTML);
+                    string noHTML =RemoveHTML(tst["TS_DESCRIPTION"]);
+                    Match m = Regex.Match(noHTML, "(?s)[Pp]rerequisites.*[Cc]hange [Cc]ontrol");
                     strPrerequisites = m.Value;
                     DesignStepFactory dsf = tst.DesignStepFactory;
                     TDAPIOLELib.List dslflist = dsf.NewList("");
@@ -231,8 +232,8 @@ namespace EvidenceCollector
 
                         arrStepData = new string[3];
                         arrStepData[0] = ds.StepName;
-                        arrStepData[1] = ds.StepDescription;
-                        arrStepData[2] = ds.StepExpectedResult;
+                        arrStepData[1] = RemoveHTML(ds.StepDescription);
+                        arrStepData[2] = RemoveHTML(ds.StepExpectedResult);
                         lstTestPlanSteps.Add(arrStepData);
                         bIsCandidateEvidence = false;
                         strscreenprint = (string)ds["DS_USER_01"];
@@ -368,6 +369,14 @@ namespace EvidenceCollector
                 }
             }
             return new string(array, 0, arrayIndex);
+        }
+
+        private string RemoveHTML(string strinput)
+        {
+            string strtemp = string.Empty;
+            strtemp = Regex.Replace(strinput, @"<[^>]+>|&nbsp;", "").Trim();
+            strtemp = WebUtility.HtmlDecode(strtemp);
+            return strtemp;
         }
 
     }

@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "EvidenceCollectorSetup", "Setup2\EvidenceCollectorSetup.isproj", "{DE3F4ECC-EDE2-402B-A543-1708846280DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64A7702E-CC15-4CA4-B5C5-5B44DDE90EB7} = {64A7702E-CC15-4CA4-B5C5-5B44DDE90EB7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvidenceCollector", "EvidenceCollector\EvidenceCollector\EvidenceCollector.csproj", "{64A7702E-CC15-4CA4-B5C5-5B44DDE90EB7}"
 EndProject

@@ -345,13 +345,10 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>CustomControl.dll</td><td>{21374513-9FCF-4F42-B9A6-2B76AA86B0FD}</td><td>INSTALLDIR</td><td>2</td><td/><td>customcontrol.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>EvidenceCollector.exe</td><td>{32BB2D45-FA47-4846-9D53-622F5FE58F6E}</td><td>INSTALLDIR</td><td>2</td><td/><td>evidencecollector.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>EvidenceCollector.Primary_output</td><td>{B857252B-FD7F-47EF-8C88-DAEB28E1A3BF}</td><td>INSTALLDIR</td><td>2</td><td/><td>evidencecollector.primary_ou</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{BF3652FE-7555-4045-891B-95087037A237}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{ADC43AE2-E199-49EE-A7CB-D938D98127B7}</td><td>TEMPLATEFOLDER</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td>{56773599-2E97-49C7-B0AF-61559E356246}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>KeyLibrary.dll</td><td>{8F1D2A18-3501-4D7B-BF0D-EBA464CA9194}</td><td>INSTALLDIR</td><td>2</td><td/><td>keylibrary.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ScreenCaptureLibrary.dll</td><td>{F2A45605-B51D-4AAB-AC02-5E36466FF2BE}</td><td>INSTALLDIR</td><td>2</td><td/><td>screencapturelibrary.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1061,13 +1058,10 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>INSTALLDIR</td><td>CustomControl.dll</td></row>
-		<row><td>INSTALLDIR</td><td>EvidenceCollector.exe</td></row>
+		<row><td>INSTALLDIR</td><td>EvidenceCollector.Primary_output</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 		<row><td>INSTALLDIR</td><td>IS_ININSTALL_SHORTCUT</td></row>
-		<row><td>INSTALLDIR</td><td>KeyLibrary.dll</td></row>
-		<row><td>INSTALLDIR</td><td>ScreenCaptureLibrary.dll</td></row>
 		<row><td>TEMPLATEFOLDER</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
@@ -1898,13 +1892,10 @@
 	<table name="FeatureComponents">
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>AlwaysInstall</td><td>CustomControl.dll</td></row>
-		<row><td>AlwaysInstall</td><td>EvidenceCollector.exe</td></row>
+		<row><td>AlwaysInstall</td><td>EvidenceCollector.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 		<row><td>AlwaysInstall</td><td>IS_ININSTALL_SHORTCUT</td></row>
-		<row><td>AlwaysInstall</td><td>KeyLibrary.dll</td></row>
-		<row><td>AlwaysInstall</td><td>ScreenCaptureLibrary.dll</td></row>
 	</table>
 
 	<table name="File">
@@ -1920,11 +1911,7 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>_296995853_manual_test_evide</td><td>ISX_DEFAULTCOMPONENT1</td><td>129699~1.DOC|1296995853 Manual Test Evidence Template v1.docx</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Temp\EvidenceTemplate\1296995853 Manual Test Evidence Template v1.docx</td><td>1</td><td/></row>
-		<row><td>customcontrol.dll</td><td>CustomControl.dll</td><td>CUSTOM~1.DLL|CustomControl.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug\Dotfuscated\CustomControl.dll</td><td>1</td><td/></row>
-		<row><td>evidencecollector.exe</td><td>EvidenceCollector.exe</td><td>EVIDEN~1.EXE|EvidenceCollector.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug\Dotfuscated\EvidenceCollector.exe</td><td>1</td><td/></row>
-		<row><td>keylibrary.dll</td><td>KeyLibrary.dll</td><td>KEYLIB~1.DLL|KeyLibrary.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug\Dotfuscated\KeyLibrary.dll</td><td>1</td><td/></row>
-		<row><td>map.xml</td><td>ISX_DEFAULTCOMPONENT</td><td>Map.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug\Dotfuscated\Map.xml</td><td>1</td><td/></row>
-		<row><td>screencapturelibrary.dll</td><td>ScreenCaptureLibrary.dll</td><td>SCREEN~1.DLL|ScreenCaptureLibrary.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug\Dotfuscated\ScreenCaptureLibrary.dll</td><td>1</td><td/></row>
+		<row><td>evidencecollector.primary_ou</td><td>EvidenceCollector.Primary_output</td><td>EvidenceCollector.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;EvidenceCollector4&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2069,13 +2056,10 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>CustomControl.dll</td><td/><td/><td>_4FC57476_ACFF_4009_BB1E_CAEED10436E9_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>EvidenceCollector.exe</td><td/><td/><td>_DC6E4F4E_4548_4A27_8BCB_BB4AEE7805C0_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>EvidenceCollector.Primary_output</td><td/><td/><td>_68B6701A_E484_419D_8FF4_0BD81E477DB2_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_93877033_D1F1_41A8_BD1C_1E3C284C5932_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_C12DA729_5150_4B7E_8253_DD8649F40BF6_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td/><td/><td>_6DD3E50F_D00E_48FD_8FC9_4003AB97ED3F_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>KeyLibrary.dll</td><td/><td/><td>_F319DDCC_1E80_453E_BFF9_08AB0F2BADE5_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ScreenCaptureLibrary.dll</td><td/><td/><td>_F2D3A42B_A196_463D_B066_8E0576E1568F_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -3496,6 +3480,7 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME6</td><td>1033</td><td>Evidence Collector</td><td>0</td><td/><td>-1289435729</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME7</td><td>1033</td><td> EvidenceCollector</td><td>0</td><td/><td>-1289478476</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME8</td><td>1033</td><td>LAUNCH~1.EXE|Launch EvidenceCollector.exe</td><td>0</td><td/><td>-1289427275</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME9</td><td>1033</td><td>Evidence Collector</td><td>0</td><td/><td>-618357462</td></row>
 		<row><td>IDS_SOFTWARE_REQUIREMENT_MESSAGE1</td><td>1033</td><td> Quality Center Client required to pull testplans, Click on this &lt;a href="http://qualitycenter.cerner.com/qcbin/PlugIns/TDConnectivity/TDConnect.exe"&gt;link&lt;/a&gt; to download the latest software</td><td>0</td><td/><td>-1960572206</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>1646543183</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>1646543183</td></row>
@@ -3921,6 +3906,7 @@
 		<row><td>NewShortcut21_C78DC1A45E3F45DB9E63247ECB911269.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>NewShortcut2_A4D564B61CAA47BEA356A20190462841.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>UNINST_Uninstall_E_E74D550A7FB74E5E8E5C401898A9DD66.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
+		<row><td>_Built_450C432F8BE847268B7D80EE2C3FF7D5.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EvidenceCollector\EvidenceCollector\Resources\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>_Built_8789E83AFF524BD28FDA8CB7652BE8C9.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
 	</table>
 
@@ -4402,8 +4388,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
 		<row><td>InstallChoice</td><td>AR</td><td/></row>
 		<row><td>LAUNCHPROGRAM</td><td>1</td><td/></row>
-		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{BB96FDB4-89B8-4467-9523-AB6172F3A918}</td><td/></row>
-		<row><td>LAUNCHPROGRAMFILEKEY</td><td>evidencecollector.exe</td><td/></row>
+		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{B857252B-FD7F-47EF-8C88-DAEB28E1A3BF}</td><td/></row>
+		<row><td>LAUNCHPROGRAMFILEKEY</td><td>evidencecollector.primary_ou</td><td/></row>
 		<row><td>LAUNCHREADME</td><td>1</td><td/></row>
 		<row><td>Manufacturer</td><td>##COMPANY_NAME##</td><td/></row>
 		<row><td>PIDKEY</td><td/><td/></row>
@@ -4431,10 +4417,10 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]EvidenceCollector.exe</td><td/></row>
+		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]EvidenceCollector.Primary output</td><td/></row>
 		<row><td>ProductCode</td><td>{882BB20B-AF15-4A0C-8348-A830EBF16800}</td><td/></row>
 		<row><td>ProductName</td><td>Evidence Collector</td><td/></row>
-		<row><td>ProductVersion</td><td>3.0.001</td><td/></row>
+		<row><td>ProductVersion</td><td>3.0.200</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4511,8 +4497,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>EvidenceCollector.exe</td><td>EvidenceCollector.exe</td><td/><td>evidence_collector</td><td>2</td></row>
 		<row><td>UNINST_Uninstall_Evidence_Collector</td><td>IS_ININSTALL_SHORTCUT</td><td/><td>evidence_collector</td><td>2</td></row>
+		<row><td>_Built</td><td>EvidenceCollector.Primary_output</td><td/><td>evidence_collector</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4598,8 +4584,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>EvidenceCollector.exe</td><td>evidence_collector</td><td>##IDS_SHORTCUT_DISPLAY_NAME8##</td><td>EvidenceCollector.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>EvidenceCollector._B1EFFDCDC61C4413ADD4C06C64310CEF.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>UNINST_Uninstall_Evidence_Collector</td><td>evidence_collector</td><td>UNINST|Uninstall Evidence Collector</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {882BB20B-AF15-4A0C-8348-A830EBF16800}</td><td/><td/><td>UNINST_Uninstall_E_E74D550A7FB74E5E8E5C401898A9DD66.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built</td><td>evidence_collector</td><td>##IDS_SHORTCUT_DISPLAY_NAME9##</td><td>EvidenceCollector.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_450C432F8BE847268B7D80EE2C3FF7D5.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

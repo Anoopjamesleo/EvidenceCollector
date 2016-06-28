@@ -1064,9 +1064,9 @@ namespace EvidenceCollector
             associateIDTextBox.Enabled = false;
 
 
-            strTemplateFileName = templateFilePathBox.Text;
-            strTargetFolderPath = targetFolderPathBox.Text+ "\\" + domainTextBox.Text;
-            strTestPlanFileName = testPlanFilePathBox.Text;
+            strTemplateFileName = templateFilePathBox.Text.Trim(); ;
+            strTargetFolderPath = targetFolderPathBox.Text.Trim('\\')+ "\\" + domainTextBox.Text;
+            strTestPlanFileName = testPlanFilePathBox.Text.Trim();
 
 
 
@@ -1075,11 +1075,11 @@ namespace EvidenceCollector
             strAssociateID = Environment.UserName;
             */
 
-            EvidenceCollector.strDomain = domainTextBox.Text;
-            EvidenceCollector.strAssociateID = associateIDTextBox.Text;
-            EvidenceCollector.strEnvironment = environmentTextBox.Text;
-            EvidenceCollector.strOperatingSystem = operatingSystemTextBox.Text;
-            EvidenceCollector.strSolutions = solutionTextBox.Text;
+            EvidenceCollector.strDomain = domainTextBox.Text.Trim();
+            EvidenceCollector.strAssociateID = associateIDTextBox.Text.Trim();
+            EvidenceCollector.strEnvironment = environmentTextBox.Text.Trim();
+            EvidenceCollector.strOperatingSystem = operatingSystemTextBox.Text.Trim();
+            EvidenceCollector.strSolutions = solutionTextBox.Text.Trim();
             EvidenceCollector.strTestData = "";
 
             evidenceCaptureStatusLabel.Text = "Pre-processing...";
