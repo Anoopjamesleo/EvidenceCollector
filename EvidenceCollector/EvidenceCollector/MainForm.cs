@@ -501,10 +501,13 @@ namespace EvidenceCollector
             kuKeyUtility.Register();
             setTooltips();
             setLastSelectedPath();
-            templateFilePathBox.Text = @"C:\Program Files (x86)\Cerner Corporation\Evidence Collector\TemplateFolder\1296995853 Manual Test Evidence Template v1.docx";
+            if (string.IsNullOrEmpty(templateFilePathBox.Text))
+            {
+                templateFilePathBox.Text = @"C:\Program Files (x86)\Cerner Corporation\Evidence Collector\TemplateFolder\1296995853 Manual Test Evidence Template v1.docx";
+            }
             //operatingSystemTextBox.Text = Environment.OSVersion.ToString();
             associateIDTextBox.Text = Environment.UserName;
-            solutionTextBox.Text = "Pharmacy Inpatient";
+           // solutionTextBox.Text = "Pharmacy Inpatient";
            
             //QCPath.Text = @"Subject\PharmNet -- Inpatient\Functional\_temp\_MM017949-Temp";
             // PreviewForm fmPreview = new PreviewForm();
@@ -981,27 +984,30 @@ namespace EvidenceCollector
 
         private void processButtonEvent(object sender, EventArgs e)
         {
-            CheckForWordFiles();
+            //CheckForWordFiles();
             bool bInsufficientInput = false;
             string strMsg = "";
             if (!QCCheck.Checked)
             {
-                if (!File.Exists(testPlanFilePathBox.Text))
+                if (!File.Exists(testPlanFilePathBox.Text.Trim()))
                 {
                     strMsg += "Invalid Test plan document.Enable the Pull from QC to fetch from QC\n";
                     bInsufficientInput = true;
                 }
             }
-            if (!File.Exists(templateFilePathBox.Text))
+            if (!File.Exists(templateFilePathBox.Text.Trim()))
             {
                 strMsg += "Invalid Template document.\n";
                 bInsufficientInput = true;
             }
-            if (!Directory.Exists(targetFolderPathBox.Text+"\\"+domainTextBox.Text))
+            if (!Directory.Exists(targetFolderPathBox.Text.Trim() + "\\" + domainTextBox.Text.Trim()))
             {
-                Directory.CreateDirectory(targetFolderPathBox.Text + "\\" + domainTextBox.Text);
+                Directory.CreateDirectory(targetFolderPathBox.Text.Trim() + "\\" + domainTextBox.Text.Trim());
             }
-
+            if (string.IsNullOrEmpty(testPlanFilePathBox.Text.Trim()))            
+            {
+               bInsufficientInput = true;
+            }
 
             if (bInsufficientInput)
             {
@@ -1064,8 +1070,8 @@ namespace EvidenceCollector
             associateIDTextBox.Enabled = false;
 
 
-            strTemplateFileName = templateFilePathBox.Text.Trim(); ;
-            strTargetFolderPath = targetFolderPathBox.Text.Trim('\\')+ "\\" + domainTextBox.Text;
+            strTemplateFileName = templateFilePathBox.Text.Trim(); 
+            strTargetFolderPath = targetFolderPathBox.Text.Trim('\\').Trim()+ "\\" + domainTextBox.Text.Trim();
             strTestPlanFileName = testPlanFilePathBox.Text.Trim();
 
 
@@ -1192,6 +1198,12 @@ namespace EvidenceCollector
                 m_strdomain = value;
             }
         }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            splitContainer1.SplitterDistance = tableLayoutPanel1.Width - preRequisiteBox.Width;        
+        }
+       
        
        
     }

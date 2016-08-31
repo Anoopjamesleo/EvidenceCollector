@@ -155,7 +155,7 @@
             // 
             this.associateIDLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.associateIDLabel.AutoSize = true;
-            this.associateIDLabel.Location = new System.Drawing.Point(3, 251);
+            this.associateIDLabel.Location = new System.Drawing.Point(3, 241);
             this.associateIDLabel.Name = "associateIDLabel";
             this.associateIDLabel.Size = new System.Drawing.Size(90, 13);
             this.associateIDLabel.TabIndex = 48;
@@ -459,7 +459,7 @@
             this.preRequisiteBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.preRequisiteBox, 2);
             this.preRequisiteBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.preRequisiteBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preRequisiteBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.preRequisiteBox.Location = new System.Drawing.Point(603, 3);
             this.preRequisiteBox.Name = "preRequisiteBox";
             this.preRequisiteBox.ReadOnly = true;
@@ -475,9 +475,9 @@
             this.panel1.Controls.Add(this.cbPrerequisiteEvidencesCheckbox);
             this.panel1.Controls.Add(this.cbSecondaryScreenCheckbox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(99, 284);
+            this.panel1.Location = new System.Drawing.Point(99, 264);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 44);
+            this.panel1.Size = new System.Drawing.Size(378, 64);
             this.panel1.TabIndex = 38;
             // 
             // QCCheck
@@ -565,6 +565,7 @@
             this.Text = "Evidence Collector";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPreviewBox)).EndInit();

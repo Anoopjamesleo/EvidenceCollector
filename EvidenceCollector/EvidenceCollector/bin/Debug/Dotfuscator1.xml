@@ -4,33 +4,12 @@
   <!--This is application generated code. Do not edit manually.-->
   <input>
     <asmlist>
-      <inputassembly refid="10eb031f-b538-4959-8c30-db39a2d0a1fd">
+      <inputassembly refid="c89966cd-81b2-40c0-bec9-efa20418af51">
         <option>honoroas</option>
         <option>stripoa</option>
         <option>library</option>
         <option>transformxaml</option>
-        <file dir="C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug" name="CustomControl.dll" />
-      </inputassembly>
-      <inputassembly refid="6ecaf26d-34d9-4903-a6d5-6142010b3a60">
-        <option>honoroas</option>
-        <option>stripoa</option>
-        <option>library</option>
-        <option>transformxaml</option>
-        <file dir="C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug" name="EvidenceCollector.exe" />
-      </inputassembly>
-      <inputassembly refid="5ea998de-5754-41a3-a360-c5acbb1469b6">
-        <option>honoroas</option>
-        <option>stripoa</option>
-        <option>library</option>
-        <option>transformxaml</option>
-        <file dir="C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug" name="KeyLibrary.dll" />
-      </inputassembly>
-      <inputassembly refid="dc0d1fc3-0752-4734-b859-9db7e472f621">
-        <option>honoroas</option>
-        <option>stripoa</option>
-        <option>library</option>
-        <option>transformxaml</option>
-        <file dir="C:\Users\AL043369\Documents\Visual Studio 2013\Projects\Setup2\EvidenceCollector\EvidenceCollector\bin\Debug" name="ScreenCaptureLibrary.dll" />
+        <file dir="C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug" name="EvidenceCollector.exe" />
       </inputassembly>
     </asmlist>
   </input>
@@ -39,20 +18,16 @@
   </output>
   <renaming>
     <option>xmlserialization</option>
-    <option>explicitoverrides</option>
     <mapping>
       <mapoutput overwrite="false">
         <file dir="${configdir}\Dotfuscated" name="Map.xml" />
       </mapoutput>
     </mapping>
     <referencerulelist>
-      <referencerule rulekey="{AB89403F-5E08-4adf-8386-6D34AF0ADBD3}" />
-      <referencerule rulekey="{D97286EB-CF80-4ae8-94D4-E90131E6D0D7}" />
       <referencerule rulekey="{494EA3BA-B947-44B5-BEE8-A11CC85AAF9B}" />
       <referencerule rulekey="{229FD6F8-5BCC-427b-8F72-A7A413ECDF1A}" />
       <referencerule rulekey="{89769974-93E9-4e71-8D92-BE70E855ACFC}" />
       <referencerule rulekey="{7D9C8B02-2383-420f-8740-A9760394C2C1}" />
-      <referencerule rulekey="{6f022A59-3AD6-4C69-8D9B-6870B9B9E362}" />
       <referencerule rulekey="{2B7E7C8C-A39A-4db8-9DFC-6AFD38509061}" />
       <referencerule rulekey="{6655B10A-FD58-462d-8D4F-5B1316DFF0FF}" />
       <referencerule rulekey="{4D81E604-A545-4631-8B6D-C3735F793F80}" />

@@ -32,6 +32,7 @@
 	<ItemGroup/>
 	<ItemGroup/>
 	<ItemGroup/>
+	<ItemGroup/>
 	<ItemGroup>
 		<ProjectReference Include="..\EvidenceCollector\EvidenceCollector\EvidenceCollector.csproj">
 			<Name>EvidenceCollector</Name>

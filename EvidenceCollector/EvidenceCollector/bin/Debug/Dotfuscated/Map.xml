@@ -2,100 +2,10 @@
 <!DOCTYPE dotfuscatorMap SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscatorMap_v1.2.dtd">
 <dotfuscatorMap version="1.1">
     <header>
-        <timestamp>2016-06-22T21:51:10</timestamp>
+        <timestamp>2016-06-30T14:19:17</timestamp>
         <product version="5.5.4954.46574" user="Unregistered " serial="000-00-000-391">Dotfuscator and Analytics Community Edition</product>
     </header>
     <mapping>
-        <module>
-            <name>CustomControl.dll</name>
-            <type>
-                <name>CustomControl.ConfigInteractor</name>
-                <methodlist>
-                    <method>
-                        <signature>string(string)</signature>
-                        <name>LoadFromConfig</name>
-                    </method>
-                    <method>
-                        <signature>void()</signature>
-                        <name>OpenConfig</name>
-                    </method>
-                    <method>
-                        <signature>void(string, string)</signature>
-                        <name>SaveToConfig</name>
-                    </method>
-                </methodlist>
-                <fieldlist>
-                    <field>
-                        <signature>System.Configuration.Configuration</signature>
-                        <name>config</name>
-                        <newname>a</newname>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>CustomControl.ConfigTextBox</name>
-                <methodlist>
-                    <method>
-                        <signature>void()</signature>
-                        <name>.ctor</name>
-                    </method>
-                    <method>
-                        <signature>void()</signature>
-                        <name>InitTimer</name>
-                    </method>
-                    <method>
-                        <signature>void()</signature>
-                        <name>LoadValues</name>
-                    </method>
-                    <method>
-                        <signature>void(object, System.EventArgs)</signature>
-                        <name>RegTextBox_TextChanged</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void(string, string)</signature>
-                        <name>SaveToConfig</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void(object, System.EventArgs)</signature>
-                        <name>Timer_Tick</name>
-                        <newname>b</newname>
-                    </method>
-                </methodlist>
-                <fieldlist>
-                    <field>
-                        <signature>System.Drawing.Color</signature>
-                        <name>backColor</name>
-                        <newname>d</newname>
-                    </field>
-                    <field>
-                        <signature>bool</signature>
-                        <name>bFirstRun</name>
-                        <newname>b</newname>
-                    </field>
-                    <field>
-                        <signature>bool</signature>
-                        <name>bIsDirty</name>
-                        <newname>a</newname>
-                    </field>
-                    <field>
-                        <signature>string</signature>
-                        <name>strKeyName</name>
-                        <newname>c</newname>
-                    </field>
-                    <field>
-                        <signature>System.Windows.Forms.Timer</signature>
-                        <name>timer</name>
-                        <newname>e</newname>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-        </module>
         <module>
             <name>EvidenceCollector.exe</name>
             <type>
@@ -114,7 +24,7 @@
             </type>
             <type>
                 <name>EvidenceCollector.Evidence</name>
-                <newname>f</newname>
+                <newname>d</newname>
                 <methodlist>
                     <method>
                         <signature>void(string, int32)</signature>
@@ -268,7 +178,7 @@
             </type>
             <type>
                 <name>EvidenceCollector.Evidence/ActualEvidence</name>
-                <newname>f/a</newname>
+                <newname>d/a</newname>
                 <methodlist>
                     <method>
                         <signature>void(string, int32, string, string, string)</signature>
@@ -360,7 +270,7 @@
                     <method>
                         <signature>void(string)</signature>
                         <name>deleteEvidenceImage</name>
-                        <newname>a</newname>
+                        <newname>b</newname>
                     </method>
                     <method>
                         <signature>string()</signature>
@@ -420,22 +330,27 @@
                     <method>
                         <signature>string(string)</signature>
                         <name>GetEvidenceComments</name>
-                        <newname>g</newname>
-                    </method>
-                    <method>
-                        <signature>int32(string)</signature>
-                        <name>GetEvidenceOrdinalOf</name>
-                        <newname>f</newname>
-                    </method>
-                    <method>
-                        <signature>string(string)</signature>
-                        <name>GetEvidenceStatus</name>
                         <newname>h</newname>
                     </method>
                     <method>
                         <signature>int32(string)</signature>
+                        <name>GetEvidenceOrdinalOf</name>
+                        <newname>g</newname>
+                    </method>
+                    <method>
+                        <signature>string(string)</signature>
+                        <name>GetEvidenceStatus</name>
+                        <newname>i</newname>
+                    </method>
+                    <method>
+                        <signature>int32(string)</signature>
+                        <name>GetProcessesLockingFile</name>
+                        <newname>a</newname>
+                    </method>
+                    <method>
+                        <signature>int32(string)</signature>
                         <name>GetTestPlanStepOrdinalOf</name>
-                        <newname>e</newname>
+                        <newname>f</newname>
                     </method>
                     <method>
                         <signature>void()</signature>
@@ -450,7 +365,7 @@
                     <method>
                         <signature>void(string)</signature>
                         <name>Log</name>
-                        <newname>d</newname>
+                        <newname>e</newname>
                     </method>
                     <method>
                         <signature>void(string, string)</signature>
@@ -505,7 +420,7 @@
                     <method>
                         <signature>void(string)</signature>
                         <name>writeEvidence</name>
-                        <newname>b</newname>
+                        <newname>c</newname>
                     </method>
                     <method>
                         <signature>void(object, System.ComponentModel.DoWorkEventArgs)</signature>
@@ -515,7 +430,7 @@
                     <method>
                         <signature>void(string)</signature>
                         <name>writePrerequisiteEvidence</name>
-                        <newname>c</newname>
+                        <newname>d</newname>
                     </method>
                 </methodlist>
                 <fieldlist>
@@ -840,6 +755,11 @@
                         <newname>d</newname>
                     </method>
                     <method>
+                        <signature>void()</signature>
+                        <name>CheckForWordFiles</name>
+                        <newname>h</newname>
+                    </method>
+                    <method>
                         <signature>void(bool)</signature>
                         <name>Dispose</name>
                     </method>
@@ -872,7 +792,7 @@
                     <method>
                         <signature>void()</signature>
                         <name>initializePreviewDataGrid</name>
-                        <newname>i</newname>
+                        <newname>j</newname>
                     </method>
                     <method>
                         <signature>void(object, System.Windows.Forms.FormClosingEventArgs)</signature>
@@ -892,7 +812,7 @@
                     <method>
                         <signature>void()</signature>
                         <name>NotifyLastEvidenceCapture</name>
-                        <newname>h</newname>
+                        <newname>i</newname>
                     </method>
                     <method>
                         <signature>void(object, System.ComponentModel.RunWorkerCompletedEventArgs)</signature>
@@ -994,7 +914,7 @@
                     <field>
                         <signature>System.Windows.Forms.Label</signature>
                         <name>associateIDLabel</name>
-                        <newname>az</newname>
+                        <newname>ay</newname>
                     </field>
                     <field>
                         <signature>CustomControl.ConfigTextBox</signature>
@@ -1069,12 +989,12 @@
                     <field>
                         <signature>System.Windows.Forms.CheckBox</signature>
                         <name>cbPrerequisiteEvidencesCheckbox</name>
-                        <newname>a7</newname>
+                        <newname>a6</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.CheckBox</signature>
                         <name>cbSecondaryScreenCheckbox</name>
-                        <newname>a8</newname>
+                        <newname>a7</newname>
                     </field>
                     <field>
                         <signature>System.ComponentModel.IContainer</signature>
@@ -1114,7 +1034,7 @@
                     <field>
                         <signature>CustomControl.ConfigTextBox</signature>
                         <name>domainTextBox</name>
-                        <newname>av</newname>
+                        <newname>au</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Button</signature>
@@ -1124,17 +1044,17 @@
                     <field>
                         <signature>System.Windows.Forms.Label</signature>
                         <name>environmentLabel</name>
-                        <newname>as</newname>
+                        <newname>ar</newname>
                     </field>
                     <field>
                         <signature>CustomControl.ConfigTextBox</signature>
                         <name>environmentTextBox</name>
-                        <newname>aw</newname>
+                        <newname>av</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Label</signature>
                         <name>evidenceCaptureStatusLabel</name>
-                        <newname>aq</newname>
+                        <newname>a8</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.FormWindowState</signature>
@@ -1149,7 +1069,7 @@
                     <field>
                         <signature>System.Windows.Forms.PictureBox</signature>
                         <name>imgPreviewBox</name>
-                        <newname>a1</newname>
+                        <newname>a0</newname>
                     </field>
                     <field>
                         <signature>KeyLibrary.KeyUtility</signature>
@@ -1194,17 +1114,17 @@
                     <field>
                         <signature>System.Windows.Forms.Label</signature>
                         <name>operatingSystemLabel</name>
-                        <newname>at</newname>
+                        <newname>as</newname>
                     </field>
                     <field>
                         <signature>CustomControl.ConfigTextBox</signature>
                         <name>operatingSystemTextBox</name>
-                        <newname>ax</newname>
+                        <newname>aw</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Panel</signature>
                         <name>panel1</name>
-                        <newname>a5</newname>
+                        <newname>a4</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Panel</signature>
@@ -1214,12 +1134,12 @@
                     <field>
                         <signature>System.Windows.Forms.RichTextBox</signature>
                         <name>preRequisiteBox</name>
-                        <newname>a3</newname>
+                        <newname>a2</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.DataGridView</signature>
                         <name>previewDataGrid</name>
-                        <newname>a2</newname>
+                        <newname>a1</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Button</signature>
@@ -1229,32 +1149,32 @@
                     <field>
                         <signature>System.Windows.Forms.CheckBox</signature>
                         <name>QCCheck</name>
-                        <newname>a6</newname>
+                        <newname>a5</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Label</signature>
                         <name>solutionsLabel</name>
-                        <newname>au</newname>
+                        <newname>at</newname>
                     </field>
                     <field>
                         <signature>CustomControl.ConfigTextBox</signature>
                         <name>solutionTextBox</name>
-                        <newname>ay</newname>
+                        <newname>ax</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.SplitContainer</signature>
                         <name>splitContainer1</name>
-                        <newname>a0</newname>
+                        <newname>az</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.SplitContainer</signature>
                         <name>splitContainer2</name>
-                        <newname>a4</newname>
+                        <newname>a3</newname>
                     </field>
                     <field>
                         <signature>System.Windows.Forms.Label</signature>
                         <name>statusHintLabel</name>
-                        <newname>ar</newname>
+                        <newname>aq</newname>
                     </field>
                     <field>
                         <signature>string</signature>
@@ -1706,11 +1626,16 @@
             </type>
             <type>
                 <name>EvidenceCollector.SessionRestore</name>
-                <newname>g</newname>
+                <newname>e</newname>
                 <methodlist>
                     <method>
                         <signature>void()</signature>
                         <name>.cctor</name>
+                    </method>
+                    <method>
+                        <signature>void(string)</signature>
+                        <name>Closeword</name>
+                        <newname>a</newname>
                     </method>
                     <method>
                         <signature>void(bool)</signature>
@@ -1720,7 +1645,7 @@
                     <method>
                         <signature>void(string)</signature>
                         <name>ResumeState</name>
-                        <newname>a</newname>
+                        <newname>b</newname>
                     </method>
                 </methodlist>
                 <fieldlist>
@@ -1745,7 +1670,7 @@
             </type>
             <type>
                 <name>EvidenceCollector.TestPlan</name>
-                <newname>d</newname>
+                <newname>c</newname>
                 <methodlist>
                     <method>
                         <signature>void()</signature>
@@ -1807,6 +1732,11 @@
                         <newname>f</newname>
                     </method>
                     <method>
+                        <signature>string(string)</signature>
+                        <name>RemoveHTML</name>
+                        <newname>f</newname>
+                    </method>
+                    <method>
                         <signature>void(TDAPIOLELib.Test)</signature>
                         <name>set_SelectedTest</name>
                         <newname>f</newname>
@@ -1814,7 +1744,7 @@
                     <method>
                         <signature>string(string)</signature>
                         <name>StripTagsCharArray</name>
-                        <newname>f</newname>
+                        <newname>g</newname>
                     </method>
                 </methodlist>
                 <fieldlist>
@@ -1864,7 +1794,7 @@
             </type>
             <type>
                 <name>EvidenceCollector.TestPlan/&lt;ParseDataSet&gt;o__SiteContainer0</name>
-                <newname>d/a</newname>
+                <newname>c/a</newname>
                 <methodlist />
                 <fieldlist>
                     <field>
@@ -1888,24 +1818,19 @@
                         <newname>d</newname>
                     </field>
                     <field>
-                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,object&gt;&gt;</signature>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`4&lt;System.Runtime.CompilerServices.CallSite,EvidenceCollector.TestPlan,object,object&gt;&gt;</signature>
                         <name>&lt;&gt;p__Site5</name>
                         <newname>e</newname>
                     </field>
                     <field>
-                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`6&lt;System.Runtime.CompilerServices.CallSite,System.Type,object,string,string,object&gt;&gt;</signature>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.DesignStepFactory&gt;&gt;</signature>
                         <name>&lt;&gt;p__Site6</name>
                         <newname>f</newname>
                     </field>
                     <field>
-                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,TDAPIOLELib.DesignStepFactory&gt;&gt;</signature>
+                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,string&gt;&gt;</signature>
                         <name>&lt;&gt;p__Site7</name>
                         <newname>g</newname>
-                    </field>
-                    <field>
-                        <signature>System.Runtime.CompilerServices.CallSite`1&lt;System.Func`3&lt;System.Runtime.CompilerServices.CallSite,object,string&gt;&gt;</signature>
-                        <name>&lt;&gt;p__Site8</name>
-                        <newname>h</newname>
                     </field>
                 </fieldlist>
                 <propertylist />
@@ -3401,360 +3326,19 @@
                 <eventlist />
             </type>
         </module>
-        <module>
-            <name>KeyLibrary.dll</name>
-            <type>
-                <name>KeyLibrary.Constants</name>
-                <methodlist />
-                <fieldlist>
-                    <field>
-                        <signature>int32</signature>
-                        <name>ALT</name>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>CTRL</name>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>NOMOD</name>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>SHIFT</name>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>WIN</name>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>WM_HOTKEY_MSG_ID</name>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>KeyLibrary.KeyUtility</name>
-                <methodlist>
-                    <method>
-                        <signature>void(int32, System.Windows.Forms.Keys, System.Windows.Forms.Form)</signature>
-                        <name>.ctor</name>
-                    </method>
-                    <method>
-                        <signature>int32()</signature>
-                        <name>GetHashCode</name>
-                    </method>
-                    <method>
-                        <signature>bool()</signature>
-                        <name>Register</name>
-                    </method>
-                    <method>
-                        <signature>bool(native int, int32, int32, int32)</signature>
-                        <name>RegisterHotKey</name>
-                    </method>
-                    <method>
-                        <signature>bool()</signature>
-                        <name>Unregiser</name>
-                    </method>
-                    <method>
-                        <signature>bool(native int, int32)</signature>
-                        <name>UnregisterHotKey</name>
-                    </method>
-                </methodlist>
-                <fieldlist>
-                    <field>
-                        <signature>native int</signature>
-                        <name>hWnd</name>
-                        <newname>c</newname>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>id</name>
-                        <newname>d</newname>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>key</name>
-                        <newname>b</newname>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>modifier</name>
-                        <newname>a</newname>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-        </module>
-        <module>
-            <name>ScreenCaptureLibrary.dll</name>
-            <type>
-                <name>ScreenCaptureLibrary.CaptureUtlity</name>
-                <methodlist>
-                    <method>
-                        <signature>System.Drawing.Image()</signature>
-                        <name>CaptureScreen</name>
-                    </method>
-                    <method>
-                        <signature>void(string, System.Drawing.Imaging.ImageFormat)</signature>
-                        <name>CaptureScreenToFile</name>
-                    </method>
-                    <method>
-                        <signature>void(int32[], string, System.Drawing.Imaging.ImageFormat)</signature>
-                        <name>CaptureSecScreen</name>
-                    </method>
-                    <method>
-                        <signature>System.Drawing.Image(native int)</signature>
-                        <name>CaptureWindow</name>
-                    </method>
-                    <method>
-                        <signature>void(native int, string, System.Drawing.Imaging.ImageFormat)</signature>
-                        <name>CaptureWindowToFile</name>
-                    </method>
-                </methodlist>
-                <fieldlist />
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>ScreenCaptureLibrary.GDI32</name>
-                <newname>c</newname>
-                <methodlist>
-                    <method>
-                        <signature>void()</signature>
-                        <name>.ctor</name>
-                    </method>
-                    <method>
-                        <signature>bool(native int, int32, int32, int32, int32, native int, int32, int32, int32)</signature>
-                        <name>BitBlt</name>
-                    </method>
-                    <method>
-                        <signature>native int(native int, int32, int32)</signature>
-                        <name>CreateCompatibleBitmap</name>
-                    </method>
-                    <method>
-                        <signature>native int(native int)</signature>
-                        <name>CreateCompatibleDC</name>
-                    </method>
-                    <method>
-                        <signature>bool(native int)</signature>
-                        <name>DeleteDC</name>
-                    </method>
-                    <method>
-                        <signature>bool(native int)</signature>
-                        <name>DeleteObject</name>
-                    </method>
-                    <method>
-                        <signature>native int(native int, native int)</signature>
-                        <name>SelectObject</name>
-                    </method>
-                </methodlist>
-                <fieldlist>
-                    <field>
-                        <signature>int32</signature>
-                        <name>SRCCOPY</name>
-                        <newname>a</newname>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>ScreenCaptureLibrary.LaunchUtility</name>
-                <methodlist>
-                    <method>
-                        <signature>void(string, bool)</signature>
-                        <name>LaunchScreenFilter</name>
-                    </method>
-                </methodlist>
-                <fieldlist />
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>ScreenCaptureLibrary.ScreenFilter</name>
-                <methodlist>
-                    <method>
-                        <signature>void()</signature>
-                        <name>.ctor</name>
-                    </method>
-                    <method>
-                        <signature>void(string, bool)</signature>
-                        <name>.ctor</name>
-                    </method>
-                    <method>
-                        <signature>bool(System.Windows.Forms.Screen)</signature>
-                        <name>&lt;initScreenDimensions&gt;b__0</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void(bool)</signature>
-                        <name>Dispose</name>
-                    </method>
-                    <method>
-                        <signature>void()</signature>
-                        <name>InitializeComponent</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void()</signature>
-                        <name>initScreenDimensions</name>
-                        <newname>b</newname>
-                    </method>
-                    <method>
-                        <signature>void(object, System.Windows.Forms.FormClosingEventArgs)</signature>
-                        <name>ScreenFilter_FormClosing</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void(object, System.Windows.Forms.KeyPressEventArgs)</signature>
-                        <name>ScreenFilter_KeyPress</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void(object, System.EventArgs)</signature>
-                        <name>ScreenFilter_Load</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>void(object, System.Windows.Forms.MouseEventArgs)</signature>
-                        <name>ScreenFilter_MouseClick</name>
-                        <newname>a</newname>
-                    </method>
-                    <method>
-                        <signature>native int(System.Drawing.Point)</signature>
-                        <name>WindowFromPoint</name>
-                    </method>
-                    <method>
-                        <signature>void(System.Windows.Forms.Message&amp;)</signature>
-                        <name>WndProc</name>
-                    </method>
-                </methodlist>
-                <fieldlist>
-                    <field>
-                        <signature>bool</signature>
-                        <name>bEscPressed</name>
-                    </field>
-                    <field>
-                        <signature>bool</signature>
-                        <name>bUseSecondaryScreen</name>
-                        <newname>b</newname>
-                    </field>
-                    <field>
-                        <signature>System.ComponentModel.IContainer</signature>
-                        <name>components</name>
-                        <newname>d</newname>
-                    </field>
-                    <field>
-                        <signature>System.Func`2&lt;System.Windows.Forms.Screen,bool&gt;</signature>
-                        <name>CS$&lt;&gt;9__CachedAnonymousMethodDelegate1</name>
-                        <newname>e</newname>
-                    </field>
-                    <field>
-                        <signature>KeyLibrary.KeyUtility</signature>
-                        <name>kuCaptureHotkey</name>
-                        <newname>c</newname>
-                    </field>
-                    <field>
-                        <signature>string</signature>
-                        <name>strSavePath</name>
-                        <newname>a</newname>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>ScreenCaptureLibrary.User32</name>
-                <newname>e</newname>
-                <methodlist>
-                    <method>
-                        <signature>void()</signature>
-                        <name>.ctor</name>
-                    </method>
-                    <method>
-                        <signature>bool(native int)</signature>
-                        <name>CloseDesktop</name>
-                    </method>
-                    <method>
-                        <signature>unsigned int32()</signature>
-                        <name>GetCurrentThreadId</name>
-                    </method>
-                    <method>
-                        <signature>native int()</signature>
-                        <name>GetDesktopWindow</name>
-                    </method>
-                    <method>
-                        <signature>native int(unsigned int32)</signature>
-                        <name>GetThreadDesktop</name>
-                    </method>
-                    <method>
-                        <signature>native int(native int)</signature>
-                        <name>GetWindowDC</name>
-                    </method>
-                    <method>
-                        <signature>native int(native int, ScreenCaptureLibrary.User32/RECT&amp;)</signature>
-                        <name>GetWindowRect</name>
-                    </method>
-                    <method>
-                        <signature>native int(unsigned int32, bool, unsigned int32)</signature>
-                        <name>OpenInputDesktop</name>
-                    </method>
-                    <method>
-                        <signature>native int(native int, native int)</signature>
-                        <name>ReleaseDC</name>
-                    </method>
-                </methodlist>
-                <fieldlist />
-                <propertylist />
-                <eventlist />
-            </type>
-            <type>
-                <name>ScreenCaptureLibrary.User32/RECT</name>
-                <newname>e/a</newname>
-                <methodlist />
-                <fieldlist>
-                    <field>
-                        <signature>int32</signature>
-                        <name>bottom</name>
-                        <newname>d</newname>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>left</name>
-                        <newname>a</newname>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>right</name>
-                        <newname>c</newname>
-                    </field>
-                    <field>
-                        <signature>int32</signature>
-                        <name>top</name>
-                        <newname>b</newname>
-                    </field>
-                </fieldlist>
-                <propertylist />
-                <eventlist />
-            </type>
-        </module>
     </mapping>
     <statistics>
         <statisticline>
             <description>Total Classes</description>
-            <statistic>101</statistic>
+            <statistic>91</statistic>
         </statisticline>
         <statisticline>
             <description>Total Methods</description>
-            <statistic>348</statistic>
+            <statistic>303</statistic>
         </statisticline>
         <statisticline>
             <description>Total Fields</description>
-            <statistic>236</statistic>
+            <statistic>208</statistic>
         </statisticline>
         <statisticline>
             <description>Total Properties</description>
@@ -3766,18 +3350,18 @@
         </statisticline>
         <statisticline>
             <description>Total Classes Renamed</description>
-            <statistic>12</statistic>
-            <statistic>11.88 %</statistic>
+            <statistic>9</statistic>
+            <statistic>9.89 %</statistic>
         </statisticline>
         <statisticline>
             <description>Total Methods Renamed</description>
-            <statistic>125</statistic>
-            <statistic>35.92 %</statistic>
+            <statistic>119</statistic>
+            <statistic>39.27 %</statistic>
         </statisticline>
         <statisticline>
             <description>Total Fields Renamed</description>
-            <statistic>197</statistic>
-            <statistic>83.47 %</statistic>
+            <statistic>176</statistic>
+            <statistic>84.62 %</statistic>
         </statisticline>
         <statisticline>
             <description>Total Properties Renamed</description>
@@ -3791,38 +3375,38 @@
         </statisticline>
         <statisticline>
             <description>Methods Renamed to 'a'</description>
-            <statistic>37</statistic>
-            <statistic>10.63 %</statistic>
+            <statistic>29</statistic>
+            <statistic>9.57 %</statistic>
         </statisticline>
         <statisticline>
             <description>Methods Renamed to 'b'</description>
-            <statistic>13</statistic>
-            <statistic>3.74 %</statistic>
+            <statistic>12</statistic>
+            <statistic>3.96 %</statistic>
         </statisticline>
         <statisticline>
             <description>Methods Renamed to 'f'</description>
             <statistic>11</statistic>
-            <statistic>3.16 %</statistic>
+            <statistic>3.63 %</statistic>
         </statisticline>
         <statisticline>
             <description>Methods Renamed to 'c'</description>
             <statistic>7</statistic>
-            <statistic>2.01 %</statistic>
+            <statistic>2.31 %</statistic>
         </statisticline>
         <statisticline>
             <description>Methods Renamed to 'd'</description>
             <statistic>6</statistic>
-            <statistic>1.72 %</statistic>
+            <statistic>1.98 %</statistic>
         </statisticline>
         <statisticline>
             <description>Methods Renamed to 'e'</description>
             <statistic>6</statistic>
-            <statistic>1.72 %</statistic>
+            <statistic>1.98 %</statistic>
         </statisticline>
         <statisticline>
-            <description>Methods Renamed to 'm'</description>
+            <description>Methods Renamed to 'g'</description>
             <statistic>6</statistic>
-            <statistic>1.72 %</statistic>
+            <statistic>1.98 %</statistic>
         </statisticline>
     </statistics>
 </dotfuscatorMap>

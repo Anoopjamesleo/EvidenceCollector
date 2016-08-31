@@ -394,7 +394,7 @@ namespace EvidenceCollector
                 }
                 else
                 {
-                    tpPlan.ParseDataSet(lstObjArguments[4],strTargetFolderPath, lstObjArguments[5], lstObjArguments[6], lstObjArguments[7], strTestPlanFileName);
+                    tpPlan.ParseDataSet(lstObjArguments[4], strTargetFolderPath, lstObjArguments[5], lstObjArguments[6], lstObjArguments[7], strTestPlanFileName);
                 }
                 bMetadataExtractionReturned = true;
                 if (bgwReadEvidenceSender.CancellationPending)
@@ -403,18 +403,26 @@ namespace EvidenceCollector
                     return;
                 }
             }
-            catch(Exception ex)
+            catch (FileNotFoundException ex)
             {
-                MessageBox.Show(new Form { TopMost = true },ex.Message+ " Invalid test plan\n"  );
+                MessageBox.Show(new Form { TopMost = true }, ex.Message, "Evidence Collector");
                 Log("Invalid test plan\n" + ex.Message);
                 e.Cancel = true;
                 return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(new Form { TopMost = true }, ex.Message, "Evidence Collector");
+                Log("Exception\n" + ex.Message);
+                e.Cancel = true;
+                return;
+            
             }
             evEvidence = new Evidence(tpPlan.strPropTestPlanName, tpPlan.iPropNumberOfSteps);
             evEvidence.FetchDetails();
             evEvidence.AddDetails(strSolutions, strTestData, strDomain, strEnvironment, strOperatingSystem, strAssociateID);
 
-            strTargetFileURI = strTargetFolderPath + "\\Evidence-" + EvidenceCollector.strPropTestPlanName + ".docx";
+            strTargetFileURI = strTargetFolderPath +"\\Evidence-" + EvidenceCollector.strPropTestPlanName + ".docx";
             return;
         }
 
@@ -525,7 +533,7 @@ namespace EvidenceCollector
                 if (!bPrerequisiteEvidence)
                 {
                     bmpCurrentImageBitmap = (Bitmap)Image.FromStream(ms_);
-                    evEvidence.AddActualEvidence(strEvidenceID, GetEvidenceOrdinalOf(strEvidenceID), strEvidenceImageURI, "Passed", "");
+                    evEvidence.AddActualEvidence(strEvidenceID, GetEvidenceOrdinalOf(strEvidenceID), strEvidenceImageURI, "Passed", "N/A");
                 }
                 else
                 {

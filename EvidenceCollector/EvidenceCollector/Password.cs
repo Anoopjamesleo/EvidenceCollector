@@ -16,6 +16,7 @@ namespace EvidenceCollector
         {
             InitializeComponent();
             configTextBox1.LoadValues();
+            textBox1.LoadValues();
             configTextBox1.Text = "http://qualitycenter.cerner.com/qcbin/";
             QCProject.SelectedIndex = 0;
             QCDomain.SelectedIndex = 0;

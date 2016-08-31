@@ -46,6 +46,7 @@ C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\E
 C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\EvidenceCollector.pdb
 C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\CustomControl.dll
 C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\KeyLibrary.dll
+C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\Microsoft.Office.Interop.Word.dll
 C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\bin\Debug\ScreenCaptureLibrary.dll
 C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\EvidenceCollector.csprojResolveAssemblyReference.cache
 C:\Temp\EvidenceCollector\GitHub\EvidenceCollector\EvidenceCollector\obj\Debug\Interop.TDAPIOLELib.dll

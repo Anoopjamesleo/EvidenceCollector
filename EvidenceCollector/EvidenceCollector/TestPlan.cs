@@ -21,7 +21,7 @@ namespace EvidenceCollector
         string strPrerequisites;
         Microsoft.Office.Interop.Word.Application appTestPlanReaderWordApp;
         Document docTestPlanDocument;
-
+        string strTestplanPath = string.Empty;
         public TestPlan()
         {
             appTestPlanReaderWordApp = new Microsoft.Office.Interop.Word.Application();
@@ -148,12 +148,15 @@ namespace EvidenceCollector
                 Any non whitespace printable character in the last column of the test plan table is an indicator that screenshot is to be taken for that step.
                 So, checking for an ASCII character within range [22,126]
                 */
-                foreach (char ch in strDecisionString)
+                if (string.Compare(strDecisionString.ToLower(), "none") != 0)
                 {
-                    if ((int)ch >= 33 && (int)ch <= 126)
+                    foreach (char ch in strDecisionString)
                     {
-                        bIsCandidateEvidence = true;
-                        break;
+                        if ((int)ch >= 33 && (int)ch <= 126)
+                        {
+                            bIsCandidateEvidence = true;
+                            break;
+                        }
                     }
                 }
                 if (bIsCandidateEvidence)
@@ -194,21 +197,22 @@ namespace EvidenceCollector
                     testFilter["TS_NAME"] = "\"" + strTestPlanFileName + "\"";
                     // testFilter["TS_PATH"] = "\"" + strTargetFolderPath + "\"";
                     TDAPIOLELib.List listOfTests = testFilter.NewList();
-
+                    
                     testList = (TDAPIOLELib.List)testFactory.NewList(testFilter.Text);
                     string strdescription = string.Empty;
                     int itestcount = testList.Count;
                     int stepscount = 0;
                     if (testList.Count == 0)
                     {
-                        throw new Exception("No test plans Found .Check the testplan name");
+                        throw new FileNotFoundException("No test plans Found .Check the testplan name");
 
                     }
                     else if (testList.Count > 1)
                     {
-                        MessageBox.Show("Multiple Test plans found , Click Ok to view and select the Right Test Plan");
+                        MessageBox.Show("Multiple Test plans found , Click Ok to view and select the Right Test Plan","Mutiple Test Plans");
                         DisplayListOFTestPlan(testList, testFactory);
                         tst = SelectedTest;
+                        strTestplanPath = testFactory[tst.ID]["TS_SUBJECT"].Path;
                     }
                     else
                     {
@@ -222,7 +226,8 @@ namespace EvidenceCollector
                  //   string noHTML = Regex.Replace(tst["TS_DESCRIPTION"], @"<[^>]+>|&nbsp;", "").Trim();
                   //  noHTML = WebUtility.HtmlDecode(noHTML);
                     string noHTML =RemoveHTML(tst["TS_DESCRIPTION"]);
-                    Match m = Regex.Match(noHTML, "(?s)[Pp]rerequisites.*[Cc]hange [Cc]ontrol");
+                  //  Match m = Regex.Match(noHTML, "(?s)[Pp]rerequisites.*[Cc]hange [Cc]ontrol");
+                    Match m = Regex.Match(noHTML, "(?s)[Pp]rerequisites.*");
                     strPrerequisites = m.Value;
                     DesignStepFactory dsf = tst.DesignStepFactory;
                     TDAPIOLELib.List dslflist = dsf.NewList("");
@@ -239,17 +244,20 @@ namespace EvidenceCollector
                         strscreenprint = (string)ds["DS_USER_01"];
                         if (!string.IsNullOrEmpty(strscreenprint))
                         {
-                            foreach (char ch in strscreenprint)
+                            if (string.Compare(strscreenprint.ToLower(), "none") != 0)
                             {
-                                if ((int)ch >= 33 && (int)ch <= 126)
+                                foreach (char ch in strscreenprint)
                                 {
-                                    bIsCandidateEvidence = true;
-                                    break;
+                                    if ((int)ch >= 33 && (int)ch <= 126)
+                                    {
+                                        bIsCandidateEvidence = true;
+                                        break;
+                                    }
                                 }
-                            }
-                            if (bIsCandidateEvidence)
-                            {
-                                lstStrEvidenceID.Add(ds.StepName);
+                                if (bIsCandidateEvidence)
+                                {
+                                    lstStrEvidenceID.Add(ds.StepName);
+                                }
                             }
                         }
                     }
@@ -325,6 +333,14 @@ namespace EvidenceCollector
             {
                 return lstStrEvidenceID;
             }
+        }
+        public string TestplanPath
+        {
+            get 
+            {
+                return strTestplanPath;
+            }
+        
         }
 
         #region AddedByAchal
