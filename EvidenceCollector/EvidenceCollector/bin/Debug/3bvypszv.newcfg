@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <appSettings>
+        <add key="solutionTextBox" />
+        <add key="operatingSystemTextBox" />
+        <add key="environmentTextBox" />
+        <add key="domainTextBox" />
+        <add key="targetFolderPathBox" value="C:\Users\AL043369\Desktop\Test Data" />
+        <add key="templateFilePathBox" value="C:\Program Files (x86)\Cerner Corporation\Evidence Collector\TemplateFolder\1296995853 Manual Test Evidence Template v1.docx" />
+        <add key="testPlanFilePathBox" value="Pha-b-PhaMedMgr-CopyMedOrder-SigInstructionEdit-MPS-ProductChange.docx" />
+        <add key="associateIDTextBox" value="AL043369" />
+        <add key="textBox1" value="Cerner234@" />
+        <add key="configTextBox1" value="http://qualitycenter.cerner.com/qcbin/" />
+    </appSettings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5"/>
+    </startup>
+</configuration>

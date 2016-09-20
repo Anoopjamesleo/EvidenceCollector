@@ -345,7 +345,7 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>EvidenceCollector.Primary_output</td><td>{6E635113-8EA4-44B8-88D1-44E1E7DDD9E0}</td><td>INSTALLDIR</td><td>2</td><td/><td>evidencecollector.primary_ou</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>EvidenceCollector.Primary_output</td><td>{68F3EC7B-8BA9-4CA6-8E3B-7A64F69BB2B5}</td><td>INSTALLDIR</td><td>2</td><td/><td>evidencecollector.primary_ou</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{BF3652FE-7555-4045-891B-95087037A237}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{ADC43AE2-E199-49EE-A7CB-D938D98127B7}</td><td>TEMPLATEFOLDER</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td>{56773599-2E97-49C7-B0AF-61559E356246}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
@@ -2056,7 +2056,7 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>EvidenceCollector.Primary_output</td><td/><td/><td>_B86ADC76_C121_4FCF_A536_BD70475BE650_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>EvidenceCollector.Primary_output</td><td/><td/><td>_539A7848_0D41_4BAD_93F0_578E46E10667_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_93877033_D1F1_41A8_BD1C_1E3C284C5932_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_C12DA729_5150_4B7E_8253_DD8649F40BF6_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td/><td/><td>_6DD3E50F_D00E_48FD_8FC9_4003AB97ED3F_FILTER</td><td/><td/><td/><td/></row>
@@ -2662,7 +2662,7 @@
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL</td><td>1033</td><td>Microsoft .NET Framework 4.0 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1646532975</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1960524079</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_MSOFFICE2003</td><td>1033</td><td>Microsoft Office 2003 or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1646553455</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_MSOFFICE2010</td><td>1033</td><td>Microsoft Office 2010 or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1646574415</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_MSOFFICE2010</td><td>1033</td><td>Microsoft Office 2010 or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>2091174507</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>1646543183</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>1646543183</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1646543183</td></row>
@@ -3475,6 +3475,7 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>1646574639</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME10</td><td>1033</td><td>EvidenceCollector.exe</td><td>0</td><td/><td>-215725426</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME11</td><td>1033</td><td>Evidence Collector</td><td>0</td><td/><td>-215724016</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME12</td><td>1033</td><td>Evidence Collector</td><td>0</td><td/><td>2091150476</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch EvidenceCollector.exe</td><td>0</td><td/><td>-1423670506</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>LAUNCH~1.EXE|Launch EvidenceCollector.exe</td><td>0</td><td/><td>-1289452308</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch EvidenceCollector.exe</td><td>0</td><td/><td>-1289445876</td></row>
@@ -3777,6 +3778,8 @@
 		<row><td>ID_STRING11</td><td>1033</td><td>LAUNCH~1.EXE|Launch EvidenceCollector.exe</td><td>0</td><td/><td>-1289439732</td></row>
 		<row><td>ID_STRING12</td><td>1033</td><td>LAUNCH~1.EXE|Launch EvidenceCollector.exe</td><td>0</td><td/><td>-1289458028</td></row>
 		<row><td>ID_STRING13</td><td>1033</td><td>Evidence Collector</td><td>0</td><td/><td>-215724016</td></row>
+		<row><td>ID_STRING14</td><td>1033</td><td/><td>0</td><td/><td>2091181164</td></row>
+		<row><td>ID_STRING15</td><td>1033</td><td>Evidence Collector</td><td>0</td><td/><td>2091166860</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td>Cerner Corporation</td><td>0</td><td/><td>-215685265</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>EVIDEN~2|Evidence Collector</td><td>0</td><td/><td>1646576047</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>EVIDEN~2|Evidence Collector</td><td>0</td><td/><td>1646531023</td></row>
@@ -3909,9 +3912,12 @@
 		<row><td>EvidenceCollector._B1EFFDCDC61C4413ADD4C06C64310CEF.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>NewShortcut21_C78DC1A45E3F45DB9E63247ECB911269.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>NewShortcut2_A4D564B61CAA47BEA356A20190462841.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
+		<row><td>UNINST_Uninstall_E_135B9D7A42744E0C90E3016DFC22A3A0.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 		<row><td>UNINST_Uninstall_E_E74D550A7FB74E5E8E5C401898A9DD66.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 		<row><td>_Built1_79D66515982E400AA24EC0ACBF77D2B4.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EvidenceCollector\EvidenceCollector\Resources\Evidence_Collector.ico</td><td>0</td></row>
+		<row><td>_Built1_A9348130933448E4B1822A8A6341E847.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EvidenceCollector\EvidenceCollector\Resources\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>_Built_450C432F8BE847268B7D80EE2C3FF7D5.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EvidenceCollector\EvidenceCollector\Resources\Evidence_Collector.ico</td><td>0</td></row>
+		<row><td>_Built_535F05ECCF1A48BFB96EDD7CFAB71877.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EvidenceCollector\EvidenceCollector\Resources\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>_Built_8789E83AFF524BD28FDA8CB7652BE8C9.exe</td><td/><td>C:\Temp\EvidenceCollector\Icons\Evidence_Collector.ico</td><td>0</td></row>
 		<row><td>_Built_DCE3798EC5484D3897EF02C7B9400CDD.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EvidenceCollector\EvidenceCollector\Resources\Evidence_Collector.ico</td><td>0</td></row>
 	</table>
@@ -4426,7 +4432,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]EvidenceCollector.Primary output</td><td/></row>
 		<row><td>ProductCode</td><td>{882BB20B-AF15-4A0C-8348-A830EBF16800}</td><td/></row>
 		<row><td>ProductName</td><td>Evidence Collector</td><td/></row>
-		<row><td>ProductVersion</td><td>3.0.300</td><td/></row>
+		<row><td>ProductVersion</td><td>3.0.400</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4591,8 +4597,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
 		<row><td>UNINST_Uninstall_Evidence_Collector</td><td>evidence_collector</td><td>UNINST|Uninstall Evidence Collector</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {882BB20B-AF15-4A0C-8348-A830EBF16800}</td><td/><td/><td>UNINST_Uninstall_E_E74D550A7FB74E5E8E5C401898A9DD66.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>_Built</td><td>evidence_collector</td><td>##IDS_SHORTCUT_DISPLAY_NAME11##</td><td>EvidenceCollector.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_DCE3798EC5484D3897EF02C7B9400CDD.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME11##</td><td>EvidenceCollector.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_79D66515982E400AA24EC0ACBF77D2B4.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>UNINST_Uninstall_Evidence_Collector1</td><td>DesktopFolder</td><td>UNINST|Uninstall Evidence Collector</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {882BB20B-AF15-4A0C-8348-A830EBF16800}</td><td/><td/><td>UNINST_Uninstall_E_135B9D7A42744E0C90E3016DFC22A3A0.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built</td><td>evidence_collector</td><td>##IDS_SHORTCUT_DISPLAY_NAME12##</td><td>EvidenceCollector.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_535F05ECCF1A48BFB96EDD7CFAB71877.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME12##</td><td>EvidenceCollector.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_A9348130933448E4B1822A8A6341E847.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

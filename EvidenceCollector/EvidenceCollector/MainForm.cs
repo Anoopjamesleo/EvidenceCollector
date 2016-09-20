@@ -88,48 +88,61 @@ namespace EvidenceCollector
 
         public MainForm()
         {
-            InitializeComponent();
-            this.InitializeFormData();
+            try
+            {
+                InitializeComponent();
+                this.InitializeFormData();
 
-            bgwPrepareTargetDocumentBackgroundWorker = new BackgroundWorker();
-            bgwPrepareTargetDocumentBackgroundWorker.WorkerReportsProgress = true;
-            bgwPrepareTargetDocumentBackgroundWorker.WorkerSupportsCancellation = true;
-            bgwPrepareTargetDocumentBackgroundWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.PrepareTargetDocumentBackgroundWork);
-            bgwPrepareTargetDocumentBackgroundWorker.ProgressChanged += BgwPrepareTargetDocumentBackgroundWorker_ProgressChanged;
-            bgwPrepareTargetDocumentBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(prepareTargetDocumentReturnedEvent);
-
-
-            bgwCaptureEvidenceBackgroundWorker = new BackgroundWorker();
-            bgwCaptureEvidenceBackgroundWorker.WorkerReportsProgress = true;
-            bgwCaptureEvidenceBackgroundWorker.WorkerSupportsCancellation = true;
-            bgwCaptureEvidenceBackgroundWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.CaptureEvidenceBackgroundWork);
-            bgwCaptureEvidenceBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(captureReturnedEvent);
+                bgwPrepareTargetDocumentBackgroundWorker = new BackgroundWorker();
+                bgwPrepareTargetDocumentBackgroundWorker.WorkerReportsProgress = true;
+                bgwPrepareTargetDocumentBackgroundWorker.WorkerSupportsCancellation = true;
+                bgwPrepareTargetDocumentBackgroundWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.PrepareTargetDocumentBackgroundWork);
+                bgwPrepareTargetDocumentBackgroundWorker.ProgressChanged += BgwPrepareTargetDocumentBackgroundWorker_ProgressChanged;
+                bgwPrepareTargetDocumentBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(prepareTargetDocumentReturnedEvent);
 
 
-            bgwWriteEvidencesBackgroundWorker = new BackgroundWorker();
-            bgwWriteEvidencesBackgroundWorker.WorkerReportsProgress = true;
-            bgwWriteEvidencesBackgroundWorker.WorkerSupportsCancellation = true;
-            bgwWriteEvidencesBackgroundWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.WriteEvidencesBackgroundWork);
-            bgwWriteEvidencesBackgroundWorker.ProgressChanged += BgwWriteEvidencesBackgroundWorker_ProgressChanged;
-            bgwWriteEvidencesBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(writeEvidenceCompletedEvent);
+                bgwCaptureEvidenceBackgroundWorker = new BackgroundWorker();
+                bgwCaptureEvidenceBackgroundWorker.WorkerReportsProgress = true;
+                bgwCaptureEvidenceBackgroundWorker.WorkerSupportsCancellation = true;
+                bgwCaptureEvidenceBackgroundWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.CaptureEvidenceBackgroundWork);
+                bgwCaptureEvidenceBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(captureReturnedEvent);
 
 
-            bgwMetadataExtractionWorker = new BackgroundWorker();
-            bgwMetadataExtractionWorker.WorkerReportsProgress = true;
-            bgwMetadataExtractionWorker.WorkerSupportsCancellation = true;
-            bgwMetadataExtractionWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.readEvidenceMetadataWork);
-            bgwMetadataExtractionWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(metadataExtractionCompleteEvent);
+                bgwWriteEvidencesBackgroundWorker = new BackgroundWorker();
+                bgwWriteEvidencesBackgroundWorker.WorkerReportsProgress = true;
+                bgwWriteEvidencesBackgroundWorker.WorkerSupportsCancellation = true;
+                bgwWriteEvidencesBackgroundWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.WriteEvidencesBackgroundWork);
+                bgwWriteEvidencesBackgroundWorker.ProgressChanged += BgwWriteEvidencesBackgroundWorker_ProgressChanged;
+                bgwWriteEvidencesBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(writeEvidenceCompletedEvent);
 
-            bgwDoneCaptureBackgroundWorker = new BackgroundWorker();
-            bgwDoneCaptureBackgroundWorker.WorkerReportsProgress = true;
-            bgwDoneCaptureBackgroundWorker.WorkerSupportsCancellation = true;
-            bgwDoneCaptureBackgroundWorker.DoWork += BgwDoneCaptureBackgroundWorker_DoWork;
-            bgwDoneCaptureBackgroundWorker.RunWorkerCompleted += BgwDoneCaptureBackgroundWorker_RunWorkerCompleted;
 
-            evidenceCaptureStatusLabel.Text = "Ready to load";
-            kuKeyUtility = new KeyUtility(KeyLibrary.Constants.CTRL + Constants.ALT, Keys.Z, this);
-            RegisterHotKey(this.Handle, this.GetType().GetHashCode(), KeyLibrary.Constants.CTRL + Constants.ALT, (int)Keys.X);
-           // kuminimize = new KeyUtility(KeyLibrary.Constants.CTRL + Constants.ALT, Keys.X, this);
+                bgwMetadataExtractionWorker = new BackgroundWorker();
+                bgwMetadataExtractionWorker.WorkerReportsProgress = true;
+                bgwMetadataExtractionWorker.WorkerSupportsCancellation = true;
+                bgwMetadataExtractionWorker.DoWork += new DoWorkEventHandler(EvidenceCollector.readEvidenceMetadataWork);
+                bgwMetadataExtractionWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(metadataExtractionCompleteEvent);
+
+                bgwDoneCaptureBackgroundWorker = new BackgroundWorker();
+                bgwDoneCaptureBackgroundWorker.WorkerReportsProgress = true;
+                bgwDoneCaptureBackgroundWorker.WorkerSupportsCancellation = true;
+                bgwDoneCaptureBackgroundWorker.DoWork += BgwDoneCaptureBackgroundWorker_DoWork;
+                bgwDoneCaptureBackgroundWorker.RunWorkerCompleted += BgwDoneCaptureBackgroundWorker_RunWorkerCompleted;
+
+                evidenceCaptureStatusLabel.Text = "Ready to load";
+                kuKeyUtility = new KeyUtility(KeyLibrary.Constants.CTRL + Constants.ALT, Keys.Z, this);
+                RegisterHotKey(this.Handle, this.GetType().GetHashCode(), KeyLibrary.Constants.CTRL + Constants.ALT, (int)Keys.X);
+                // kuminimize = new KeyUtility(KeyLibrary.Constants.CTRL + Constants.ALT, Keys.X, this);
+            }
+            catch (Exception ex)
+            {
+                this.bringFormToFront();                
+                MessageBox.Show(new Form { TopMost = true }, "Exception Occurred , Check the Log file ", "Evidence Collector");
+                this.InitializeFormData();               
+                EvidenceCollector.closeTemplateDocument();
+                EvidenceCollector.closeTargetDocument();
+                EvidenceCollector.closeWordApp();
+            
+            }
         }
 
         private void BgwPrepareTargetDocumentBackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)

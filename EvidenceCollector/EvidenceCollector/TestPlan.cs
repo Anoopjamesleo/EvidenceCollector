@@ -390,8 +390,11 @@ namespace EvidenceCollector
         private string RemoveHTML(string strinput)
         {
             string strtemp = string.Empty;
-            strtemp = Regex.Replace(strinput, @"<[^>]+>|&nbsp;", "").Trim();
-            strtemp = WebUtility.HtmlDecode(strtemp);
+            if (!string.IsNullOrEmpty(strinput))
+            {
+                strtemp = Regex.Replace(strinput, @"<[^>]+>|&nbsp;", "").Trim();
+                strtemp = WebUtility.HtmlDecode(strtemp);
+            }
             return strtemp;
         }
 

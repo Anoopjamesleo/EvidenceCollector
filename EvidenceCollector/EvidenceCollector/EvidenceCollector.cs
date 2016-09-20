@@ -210,160 +210,170 @@ namespace EvidenceCollector
         /// <param name="e"></param>
         internal static void PrepareTargetDocumentBackgroundWork(object sender, DoWorkEventArgs e)
         {
-            BackgroundWorker bgwPrepareTargetDocumentSender = sender as BackgroundWorker;
-            Range rngNewEvidenceTableRange, rngNewEvidenceStringRange, rngTemplateEvidenceTable, rngEvidenceStringRange, rngPageBreakHelper, rngActualEvidenceBegin;
-            Table tbNewEvidenceTable;
-            Paragraph paraEvidenceString;
-            int iEvidenceStringRangeStart, iEvidenceStringRangeEnd, iTableID;
-            Bitmap bmpDummyImage = new Bitmap(4, 4);
-            string strDummyImagePath = strTempPath + "dummy.png", strEvidenceID;
-            bmpDummyImage.Save(strDummyImagePath, System.Drawing.Imaging.ImageFormat.Png);
-            InlineShape shpDummyImageShape, shpScreenShot;
-            Range rngScreenShotRange;
-
-            openWordApp();
-            if (!bResumedSession)
-            {
-                openTemplateDocument(true);
-                cloneDocument();
-                bgwPrepareTargetDocumentSender.ReportProgress(1);
-                closeTemplateDocument();
-            }
-
-            openTemplateDocument(true);
-
-            rngTemplateEvidenceTable = docTemplateDocument.Tables[2].Range;
-            iEvidenceStringRangeStart = docTemplateDocument.Range(rngTemplateEvidenceTable.End, docTemplateDocument.Content.End).Sentences[1].Start;
-            iEvidenceStringRangeEnd = docTemplateDocument.Range(rngTemplateEvidenceTable.End, docTemplateDocument.Content.End).Sentences[1].End;
-            rngEvidenceStringRange = docTemplateDocument.Range(iEvidenceStringRangeStart, iEvidenceStringRangeEnd);
-            openTargetDocument(false);
             try
             {
-                evEvidence.AddTemplateDetails(docTargetDocument.Tables[2], docTargetDocument.Tables[2].Range.Next(WdUnits.wdSentence, 1).Text);
-            }
-            catch 
-            {
-                closeTargetDocument();
-                cloneDocument();
-                bgwPrepareTargetDocumentSender.ReportProgress(1);
-                closeTemplateDocument();
+                BackgroundWorker bgwPrepareTargetDocumentSender = sender as BackgroundWorker;
+                Range rngNewEvidenceTableRange, rngNewEvidenceStringRange, rngTemplateEvidenceTable, rngEvidenceStringRange, rngPageBreakHelper, rngActualEvidenceBegin;
+                Table tbNewEvidenceTable;
+                Paragraph paraEvidenceString;
+                int iEvidenceStringRangeStart, iEvidenceStringRangeEnd, iTableID;
+                Bitmap bmpDummyImage = new Bitmap(4, 4);
+                string strDummyImagePath = strTempPath + "dummy.png", strEvidenceID;
+                bmpDummyImage.Save(strDummyImagePath, System.Drawing.Imaging.ImageFormat.Png);
+                InlineShape shpDummyImageShape, shpScreenShot;
+                Range rngScreenShotRange;
+
+                openWordApp();
+                if (!bResumedSession)
+                {
+                    openTemplateDocument(true);
+                    cloneDocument();
+                    bgwPrepareTargetDocumentSender.ReportProgress(1);
+                    closeTemplateDocument();
+                }
+
                 openTemplateDocument(true);
+
                 rngTemplateEvidenceTable = docTemplateDocument.Tables[2].Range;
                 iEvidenceStringRangeStart = docTemplateDocument.Range(rngTemplateEvidenceTable.End, docTemplateDocument.Content.End).Sentences[1].Start;
                 iEvidenceStringRangeEnd = docTemplateDocument.Range(rngTemplateEvidenceTable.End, docTemplateDocument.Content.End).Sentences[1].End;
                 rngEvidenceStringRange = docTemplateDocument.Range(iEvidenceStringRangeStart, iEvidenceStringRangeEnd);
                 openTargetDocument(false);
-                evEvidence.AddTemplateDetails(docTargetDocument.Tables[2], docTargetDocument.Tables[2].Range.Next(WdUnits.wdSentence, 1).Text);
-            }
-
-
-
-            if (!bResumedSession)
-            {
-                docTargetDocument.Tables[1].Rows[1].Cells[2].Range.Text = evEvidence.strPropTestPlanName;
-                docTargetDocument.Tables[1].Rows[2].Cells[2].Range.Text = evEvidence.strPropSolutions;
-                docTargetDocument.Tables[1].Rows[3].Cells[2].Range.Text = evEvidence.dtPropCreatedDate.ToString("dd/MM/yyyy");
-                docTargetDocument.Tables[1].Rows[3].Cells[4].Range.Text = evEvidence.iPropNumberOfEvidences.ToString();
-                docTargetDocument.Tables[1].Rows[4].Cells[2].Range.Text = evEvidence.strPropEnvironment;
-                docTargetDocument.Tables[1].Rows[4].Cells[4].Range.Text = evEvidence.strPropOperatingSystem;
-                docTargetDocument.Tables[1].Rows[5].Cells[2].Range.Text = evEvidence.strPropAssociateID;
-                docTargetDocument.Tables[1].Rows[5].Cells[4].Range.Text = evEvidence.strPropDomain;
-                docTargetDocument.Tables[1].Rows[6].Cells[2].Range.Text = evEvidence.strPropTestData;
-
-
-
-                rngActualEvidenceBegin = docTargetDocument.Range();
-                rngActualEvidenceBegin.SetRange(docTargetDocument.Tables[2].Range.Previous(WdUnits.wdSentence, 1).Start, docTargetDocument.Content.End);
-                rngActualEvidenceBegin.Collapse(WdCollapseDirection.wdCollapseStart);
-                rngActualEvidenceBegin.InsertBreak(WdBreakType.wdPageBreak);
-
-                docTargetDocument.Range(docTargetDocument.Tables[2].Range.Start, docTargetDocument.Content.End).Delete(1); // delete initial evidence tables.
-            }
-
-            rngScreenShotRange = docTargetDocument.Range();
-            bReadyToInsertPrerequisiteEvidences = true;
-
-            if (bResumedSession)
-            {
-                foreach (string strEvID in dictShpDummyScreenshots.Keys)
+                try
                 {
-                    if (bgwPrepareTargetDocumentSender.CancellationPending)
+                    evEvidence.AddTemplateDetails(docTargetDocument.Tables[2], docTargetDocument.Tables[2].Range.Next(WdUnits.wdSentence, 1).Text);
+                }
+                catch (Exception ex)
+                {
+                    Log(ex.Message + ex.StackTrace);
+                    closeTargetDocument();
+                    cloneDocument();
+                    bgwPrepareTargetDocumentSender.ReportProgress(1);
+                    closeTemplateDocument();
+                    openTemplateDocument(true);
+                    rngTemplateEvidenceTable = docTemplateDocument.Tables[2].Range;
+                    iEvidenceStringRangeStart = docTemplateDocument.Range(rngTemplateEvidenceTable.End, docTemplateDocument.Content.End).Sentences[1].Start;
+                    iEvidenceStringRangeEnd = docTemplateDocument.Range(rngTemplateEvidenceTable.End, docTemplateDocument.Content.End).Sentences[1].End;
+                    rngEvidenceStringRange = docTemplateDocument.Range(iEvidenceStringRangeStart, iEvidenceStringRangeEnd);
+                    openTargetDocument(false);
+                    evEvidence.AddTemplateDetails(docTargetDocument.Tables[2], docTargetDocument.Tables[2].Range.Next(WdUnits.wdSentence, 1).Text);
+                }
+
+
+
+                if (!bResumedSession)
+                {
+                    docTargetDocument.Tables[1].Rows[1].Cells[2].Range.Text = evEvidence.strPropTestPlanName;
+                    docTargetDocument.Tables[1].Rows[2].Cells[2].Range.Text = evEvidence.strPropSolutions;
+                    docTargetDocument.Tables[1].Rows[3].Cells[2].Range.Text = evEvidence.dtPropCreatedDate.ToString("dd/MM/yyyy");
+                    docTargetDocument.Tables[1].Rows[3].Cells[4].Range.Text = evEvidence.iPropNumberOfEvidences.ToString();
+                    docTargetDocument.Tables[1].Rows[4].Cells[2].Range.Text = evEvidence.strPropEnvironment;
+                    docTargetDocument.Tables[1].Rows[4].Cells[4].Range.Text = evEvidence.strPropOperatingSystem;
+                    docTargetDocument.Tables[1].Rows[5].Cells[2].Range.Text = evEvidence.strPropAssociateID;
+                    docTargetDocument.Tables[1].Rows[5].Cells[4].Range.Text = evEvidence.strPropDomain;
+                    docTargetDocument.Tables[1].Rows[6].Cells[2].Range.Text = evEvidence.strPropTestData;
+
+
+
+                    rngActualEvidenceBegin = docTargetDocument.Range();
+                    rngActualEvidenceBegin.SetRange(docTargetDocument.Tables[2].Range.Previous(WdUnits.wdSentence, 1).Start, docTargetDocument.Content.End);
+                    rngActualEvidenceBegin.Collapse(WdCollapseDirection.wdCollapseStart);
+                    rngActualEvidenceBegin.InsertBreak(WdBreakType.wdPageBreak);
+
+                    docTargetDocument.Range(docTargetDocument.Tables[2].Range.Start, docTargetDocument.Content.End).Delete(1); // delete initial evidence tables.
+                }
+
+                rngScreenShotRange = docTargetDocument.Range();
+                bReadyToInsertPrerequisiteEvidences = true;
+
+                if (bResumedSession)
+                {
+                    foreach (string strEvID in dictShpDummyScreenshots.Keys)
+                    {
+                        if (bgwPrepareTargetDocumentSender.CancellationPending)
+                        {
+                            saveTargetDocument();
+                            e.Cancel = true;
+                            return;
+                        }
+                        if (!dictShpScreenshots.Keys.Contains(strEvID))
+                        {
+                            rngScreenShotRange.SetRange(dictShpDummyScreenshots[strEvID][0], dictShpDummyScreenshots[strEvID][1] + 1);
+                            shpScreenShot = docTargetDocument.Range(dictShpDummyScreenshots[strEvID][0], dictShpDummyScreenshots[strEvID][1] + 1).InlineShapes[1];
+                            // blah
+                            dictShpScreenshots.Add(strEvID, shpScreenShot);
+                        }
+                    }
+                }
+
+
+
+                bScreenshotDictionaryReady = true;
+
+
+                rngPageBreakHelper = docTargetDocument.Range();
+                rngNewEvidenceTableRange = docTargetDocument.Range();
+                rngNewEvidenceStringRange = docTargetDocument.Range();
+
+                for (int iEvidenceOrdinal = lstStrPropTablesWritten.Count; iEvidenceOrdinal < evEvidence.iPropNumberOfEvidences; iEvidenceOrdinal++)
+                {
+
+                    strEvidenceID = lstPropEvidenceID[iEvidenceOrdinal];
+
+                    rngNewEvidenceTableRange.SetRange(docTargetDocument.Content.End, docTargetDocument.Content.End);
+                    tbNewEvidenceTable = docTargetDocument.Tables.Add(rngNewEvidenceTableRange, 1, 1);
+                    rngTemplateEvidenceTable.Copy();
+                    tbNewEvidenceTable.Range.Paste();
+
+                    rngNewEvidenceStringRange.SetRange(docTargetDocument.Content.End, docTargetDocument.Content.End);
+                    paraEvidenceString = docTargetDocument.Paragraphs.Add();
+                    rngEvidenceStringRange.Copy();
+                    paraEvidenceString.Range.Paste();
+
+                    shpDummyImageShape = paraEvidenceString.Range.InlineShapes.AddPicture(strDummyImagePath);
+                    shpDummyImageShape.AlternativeText = strEvidenceID;
+                    shpDummyImageShape.Title = strEvidenceID;
+                    Log("Adding dummy " + strEvidenceID);
+                    dictShpScreenshots.Add(strEvidenceID, shpDummyImageShape);
+
+                    rngPageBreakHelper.SetRange(docTargetDocument.Content.End, docTargetDocument.Content.End);
+                    rngPageBreakHelper.Collapse(WdCollapseDirection.wdCollapseEnd);
+                    rngPageBreakHelper.InsertBreak(WdBreakType.wdPageBreak);
+
+
+                    iTableID = iEvidenceOrdinal + 2;
+                    docTargetDocument.Tables[iTableID].Rows[1].Cells[2].Range.Text = strEvidenceID;
+
+
+                    saveTargetDocument();
+
+                    lstStrTablesWritten.Add(strEvidenceID);
+                    mreTableSemaphore.Set();
+
+                    if (bEvidenceCapturingCompleted)
+                    {
+                        // even if user is done, do not return before writing evidences that are already captured but not written
+                        if (queStrCapturedEvidences.Count <= 0)
+                        {
+                            return;
+                        }
+                    }
+
+                    if (bgwPrepareTargetDocumentSender.CancellationPending && lstStrPropTablesWritten.Count >= 1)
                     {
                         saveTargetDocument();
                         e.Cancel = true;
                         return;
                     }
-                    if (!dictShpScreenshots.Keys.Contains(strEvID))
-                    {
-                        rngScreenShotRange.SetRange(dictShpDummyScreenshots[strEvID][0], dictShpDummyScreenshots[strEvID][1] + 1);
-                        shpScreenShot = docTargetDocument.Range(dictShpDummyScreenshots[strEvID][0], dictShpDummyScreenshots[strEvID][1] + 1).InlineShapes[1];
-                        // blah
-                        dictShpScreenshots.Add(strEvID, shpScreenShot);
-                    }
                 }
-            }
-
-
-
-            bScreenshotDictionaryReady = true;
-
-
-            rngPageBreakHelper = docTargetDocument.Range();
-            rngNewEvidenceTableRange = docTargetDocument.Range();
-            rngNewEvidenceStringRange = docTargetDocument.Range();
-
-            for (int iEvidenceOrdinal = lstStrPropTablesWritten.Count; iEvidenceOrdinal < evEvidence.iPropNumberOfEvidences; iEvidenceOrdinal++)
-            {
-
-                strEvidenceID = lstPropEvidenceID[iEvidenceOrdinal];
-
-                rngNewEvidenceTableRange.SetRange(docTargetDocument.Content.End, docTargetDocument.Content.End);
-                tbNewEvidenceTable = docTargetDocument.Tables.Add(rngNewEvidenceTableRange, 1, 1);
-                rngTemplateEvidenceTable.Copy();
-                tbNewEvidenceTable.Range.Paste();
-
-                rngNewEvidenceStringRange.SetRange(docTargetDocument.Content.End, docTargetDocument.Content.End);
-                paraEvidenceString = docTargetDocument.Paragraphs.Add();
-                rngEvidenceStringRange.Copy();
-                paraEvidenceString.Range.Paste();
-
-                shpDummyImageShape = paraEvidenceString.Range.InlineShapes.AddPicture(strDummyImagePath);
-                shpDummyImageShape.AlternativeText = strEvidenceID;
-                shpDummyImageShape.Title = strEvidenceID;
-                Log("Adding dummy " + strEvidenceID);
-                dictShpScreenshots.Add(strEvidenceID, shpDummyImageShape);
-
-                rngPageBreakHelper.SetRange(docTargetDocument.Content.End, docTargetDocument.Content.End);
-                rngPageBreakHelper.Collapse(WdCollapseDirection.wdCollapseEnd);
-                rngPageBreakHelper.InsertBreak(WdBreakType.wdPageBreak);
-
-
-                iTableID = iEvidenceOrdinal + 2;
-                docTargetDocument.Tables[iTableID].Rows[1].Cells[2].Range.Text = strEvidenceID;
-
-
                 saveTargetDocument();
-
-                lstStrTablesWritten.Add(strEvidenceID);
-                mreTableSemaphore.Set();
-
-                if (bEvidenceCapturingCompleted)
-                {
-                    // even if user is done, do not return before writing evidences that are already captured but not written
-                    if (queStrCapturedEvidences.Count <= 0)
-                    {
-                        return;
-                    }
-                }
-
-                if (bgwPrepareTargetDocumentSender.CancellationPending && lstStrPropTablesWritten.Count >= 1)
-                {
-                    saveTargetDocument();
-                    e.Cancel = true;
-                    return;
-                }
             }
-            saveTargetDocument();
+            catch (Exception ex)
+            {
+                
+                Log(ex.Message + ex.StackTrace);
+                throw (new Exception(ex.Message));
+            }
         }
 
 
@@ -851,6 +861,7 @@ namespace EvidenceCollector
                 {
                     File.Delete(strTargetFileURI);
                 }
+               
                 docTemplateDocument.SaveAs2(strTargetFileURI);
             }
             catch (System.Runtime.InteropServices.COMException ex)
